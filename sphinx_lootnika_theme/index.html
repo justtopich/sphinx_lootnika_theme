@@ -1,0 +1,173 @@
+{%- set reldelim1 = reldelim1 is not defined and ' &#187;' or reldelim1 %}
+{%- set reldelim2 = reldelim2 is not defined and ' |' or reldelim2 %}
+{%- set render_sidebar = (not embedded) and (not theme_nosidebar|tobool) and
+                         (sidebars != []) %}
+{%- set url_root = pathto('', 1)[2:] %}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- set vue_routes = ["{ path: '*', component: NotFoundPage }", "{ path: '/', component: httpVueLoader('" + url_root + "index.vue') }"] %}
+
+{%- macro script() %}
+{# script_files is hardcoded list in Sphinx. You can only append your js files, not delete unused #}
+<script type="text/javascript">
+function get_routes() {
+ return [
+   {% for route in vue_routes %}
+    {{ route }}, {% endfor %}
+ ]}
+</script>
+
+
+
+    <!--<script src="{{ pathto('_static/documentation_options.js', 1) }}"></script>-->
+    <script src="_static/js/vue.js"></script>
+    <script src="_static/plugins/vue-router.min.js"></script>
+    <script src="_static/plugins/httpVueLoader.min.js"></script>
+    <script src="_static/plugins/vue-scrollto.js"></script>
+    <!-- <script src="_static/plugins/vuebar.js"></script> -->
+    <script src="_static/js/routes.js"></script>
+    <script src="_static/js/help.js"></script>
+{%- endmacro %}
+
+{%- macro css() %}
+    {# pathto not required, because this is singlepage app #}
+    <link rel="stylesheet" href="{{ pathto('_static/css/bootstrap.min.css', 2)|e }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/css/Awesome5-all.css', 2)|e }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/css/topich-icons.css', 2)|e }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 2)|e }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 2)|e }}" type="text/css" />
+{%- endmacro %}
+
+{%- macro tree_to_menu_sub(tree, nav_tree, nav_titles) %}
+  {# recursive building included navigation tree #}
+  {# and add route to vue_routes #}
+
+  <ul class="menu-sub">
+  {% for sub_tree in nav_tree[tree] %}
+    {%- set cur_tree =  '/' + tree + '/' + sub_tree %}
+    {%- set cur_tree_id =  'sa-' + tree + '_' + sub_tree %}
+
+    <div class="hide">{{ vue_routes.append("{ path: '" + cur_tree + "', component: httpVueLoader('" + url_root + sub_tree + ".vue') }") }}</div>
+    <router-link tag="li" to="{{ cur_tree }}"><a id="{{ cur_tree_id }}" class="nav-sidebar-link">{{ nav_titles[sub_tree]['name'] }}</a></router-link>
+
+      {# {%- if nav_titles[sub_tree]['sections']|length > 1 %} #}
+      {%- if nav_titles[sub_tree]['sections']|length %}
+        <ul>
+        {% for sec in nav_titles[sub_tree]['sections'] %}
+          <router-link tag="li" v-scroll-to="'{{ cur_tree }}{{ sec['href'] }}'" to="{{ cur_tree }}{{ sec['href'] }}">
+            <a id="{{ cur_tree_id }}{{ sec['href'] }}" class="nav-sidebar-link">{{ sec['title'] }}</a>
+          </router-link>
+        {%- endfor %}
+        </ul>
+      {%- endif %}
+  {%- endfor %}
+  </ul>
+{%- endmacro %}
+
+
+{# html layout with all dependencies must be in index.html #}
+{# pages must contain only content #}
+<!DOCTYPE html>
+<html {% if language is not none %} lang="{{ language }}"{% endif %}>
+  <head>
+
+    {%- if use_meta_charset or html5_doctype %}
+    <meta charset="{{ encoding }}" />
+    {%- else %}
+    <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
+    {%- endif %}
+
+    {%- block htmltitle %}
+    <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+    {%- endblock %}
+
+    {%- block css %}
+    {{- css() }}
+    {%- endblock %}
+
+    {%- if favicon %}
+      <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
+    {%- endif %}
+  </head>
+  <body>
+   <template id="hgh">
+      <div>
+          <h1>404 Not Found</h1>
+          Oops! :(
+      </div>
+    </template>
+    <template>
+      <my-table :config="config" :header="header" :data="data"></my-table>
+    </template>
+
+    <div id='app'>
+      <a v-scroll-to="'#vueTopPage'" id='goToTop'></a>
+      <div class="header" id='vueTopPage' onmouseover="headermouselog(1)">
+        <a class="brand-icon"><i class="icon-topich-chain-cicrle"></i></a>
+        <a class="header-brand">{{ docstitle }}</a>
+
+		<div class="searchBar">
+			<form class="searchForm" role="search">
+			  <label for="search">Search for stuff</label>
+			  <input id="search" type="search" placeholder="Search..." autofocus autocomplete="off" />
+			  <button class="searchBtn" type="submit" v-on:click="find">Go</button>
+			<!-- <router-link tag="a" class="nav-sidebar-link" to="/search" id="a-search"></router-link> -->
+			<div class="searchResult">
+				<div class= "searchResult-row">
+					I'm not working yet. Sorry..
+				</div>
+			</div>
+			</form>
+		</div>
+        <!-- <router-link tag="a" class="nav-sidebar-link" to="/search" id="a-search"></router-link> -->
+
+          <div class="cs-loader" style="display: none">
+          <div class="cs-loader-inner">
+            <label>	●</label><label>	●</label><label>	●</label><label>	●</label><label>	●</label><label>	●</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content" onmouseover="headermouselog(0)">
+      <div class="nav-sidebar">
+        <div class="nav-sidebar-inner">
+          <div class="list">
+            <h2>{{ _('Navigation') }}</h2>
+            <ul class='menu-root'>
+<!--              <router-link tag="li" to="/" exact><a class="nav-sidebar-link">{{ nav_titles['index']['name'] }}</a></router-link>-->
+
+              {% for page in nav_tree %}
+                {%- if page != 'index9' %}
+                  <div class="hide">{{ vue_routes.append("{ path: '/" + page + "', component: httpVueLoader('" + page + ".vue') }") }}</div>
+                  <router-link tag="li" to="/{{ page }}"><a id="sa-{{ page }}" class="nav-sidebar-link">{{ nav_titles[page]['name'] }}</a></router-link>
+                  {{- tree_to_menu_sub(page, nav_tree, nav_titles) }}
+                {%- endif %}
+              {%- endfor %}
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="content-guide" >
+        <transition mode="out-in">
+          <router-view></router-view>
+        </transition>
+        <footer class="footer">
+          <div class="md-footer-copyright">
+            Created using <a href="http://www.sphinx-doc.org/">Sphinx</a>
+            {{ spinx_version }} and
+            <a href="https://github.com/justtopich/sphinx_lootnika_theme">Lootnika theme for Sphinx</a>
+           </div>
+        </footer>
+      </div>
+    </div>
+    </div>
+
+    {%- if not embedded %}
+      {%- block scripts %}
+        {{- script() }}
+      {%- endblock %}
+    {%- endif %}
+
+  </body>
+</html>
