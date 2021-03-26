@@ -1,0 +1,292 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+    <link rel="stylesheet" href="_static/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/Awesome5-all.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/topich-icons.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/style.css " type="text/css" />
+  </head>
+  <body>
+   <template id="hgh">
+      <div>
+          <h1>404 Not Found</h1>
+          Oops! :(
+      </div>
+    </template>
+    <template>
+      <my-table :config="config" :header="header" :data="data"></my-table>
+    </template>
+
+    <div id='app'>
+      <a v-scroll-to="'#vueTopPage'" id='goToTop'></a>
+      <div class="header" id='vueTopPage' onmouseover="headermouselog(1)">
+        <a class="brand-icon"><i class="icon-topich-chain-cicrle"></i></a>
+        <a class="header-brand">Sphinx Themes Sample</a>
+
+		<div class="searchBar">
+			<form class="searchForm" role="search">
+			  <label for="search">Search for stuff</label>
+			  <input id="search" type="search" placeholder="Search..." autofocus autocomplete="off" />
+			  <button class="searchBtn" type="submit" v-on:click="find">Go</button>
+			<!-- <router-link tag="a" class="nav-sidebar-link" to="/search" id="a-search"></router-link> -->
+			<div class="searchResult">
+				<div class= "searchResult-row">
+					I'm not working yet. Sorry..
+				</div>
+			</div>
+			</form>
+		</div>
+        <!-- <router-link tag="a" class="nav-sidebar-link" to="/search" id="a-search"></router-link> -->
+
+          <div class="cs-loader" style="display: none">
+          <div class="cs-loader-inner">
+            <label>	●</label><label>	●</label><label>	●</label><label>	●</label><label>	●</label><label>	●</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content" onmouseover="headermouselog(0)">
+      <div class="nav-sidebar">
+        <div class="nav-sidebar-inner">
+          <div class="list">
+            <h2>Navigation</h2>
+            <ul class='menu-root'>
+<!--              <router-link tag="li" to="/" exact><a class="nav-sidebar-link">Sample Sphinx Documentation</a></router-link>-->
+
+              
+                  <div class="hide">None</div>
+                  <router-link tag="li" to="/index"><a id="sa-index" class="nav-sidebar-link">Sample Sphinx Documentation</a></router-link>
+  
+  
+
+  <ul class="menu-sub">
+  
+
+    <div class="hide">None</div>
+    <router-link tag="li" to="/index/demo/structure"><a id="sa-index_demo/structure" class="nav-sidebar-link">Structural Elements</a></router-link>
+
+      
+        <ul>
+        
+          <router-link tag="li" v-scroll-to="'/index/demo/structure#structural-elements'" to="/index/demo/structure#structural-elements">
+            <a id="sa-index_demo/structure#structural-elements" class="nav-sidebar-link">Structural Elements</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/structure#structural-elements-2'" to="/index/demo/structure#structural-elements-2">
+            <a id="sa-index_demo/structure#structural-elements-2" class="nav-sidebar-link">Structural Elements 2</a>
+          </router-link>
+        </ul>
+
+    <div class="hide">None</div>
+    <router-link tag="li" to="/index/demo/demo"><a id="sa-index_demo/demo" class="nav-sidebar-link">Paragraph Level Markup</a></router-link>
+
+      
+        <ul>
+        
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#inline-markup'" to="/index/demo/demo#inline-markup">
+            <a id="sa-index_demo/demo#inline-markup" class="nav-sidebar-link">Inline Markup</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#math'" to="/index/demo/demo#math">
+            <a id="sa-index_demo/demo#math" class="nav-sidebar-link">Math</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#meta'" to="/index/demo/demo#meta">
+            <a id="sa-index_demo/demo#meta" class="nav-sidebar-link">Meta</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#blocks'" to="/index/demo/demo#blocks">
+            <a id="sa-index_demo/demo#blocks" class="nav-sidebar-link">Blocks</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#sidebar'" to="/index/demo/demo#sidebar">
+            <a id="sa-index_demo/demo#sidebar" class="nav-sidebar-link">Sidebar</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#references'" to="/index/demo/demo#references">
+            <a id="sa-index_demo/demo#references" class="nav-sidebar-link">References</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#directives'" to="/index/demo/demo#directives">
+            <a id="sa-index_demo/demo#directives" class="nav-sidebar-link">Directives</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/demo#download-links'" to="/index/demo/demo#download-links">
+            <a id="sa-index_demo/demo#download-links" class="nav-sidebar-link">Download Links</a>
+          </router-link>
+        </ul>
+
+    <div class="hide">None</div>
+    <router-link tag="li" to="/index/demo/lists_tables"><a id="sa-index_demo/lists_tables" class="nav-sidebar-link">Lists & Tables</a></router-link>
+
+      
+        <ul>
+        
+          <router-link tag="li" v-scroll-to="'/index/demo/lists_tables#lists'" to="/index/demo/lists_tables#lists">
+            <a id="sa-index_demo/lists_tables#lists" class="nav-sidebar-link">Lists</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/lists_tables#tables'" to="/index/demo/lists_tables#tables">
+            <a id="sa-index_demo/lists_tables#tables" class="nav-sidebar-link">Tables</a>
+          </router-link>
+        </ul>
+
+    <div class="hide">None</div>
+    <router-link tag="li" to="/index/demo/api"><a id="sa-index_demo/api" class="nav-sidebar-link">API documentation and generated content</a></router-link>
+
+      
+        <ul>
+        
+          <router-link tag="li" v-scroll-to="'/index/demo/api#module-test_py_module.test'" to="/index/demo/api#module-test_py_module.test">
+            <a id="sa-index_demo/api#module-test_py_module.test" class="nav-sidebar-link">test_py_module</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/api#c-api'" to="/index/demo/api#c-api">
+            <a id="sa-index_demo/api#c-api" class="nav-sidebar-link">C++ API</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/api#javascript-api'" to="/index/demo/api#javascript-api">
+            <a id="sa-index_demo/api#javascript-api" class="nav-sidebar-link">JavaScript API</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/api#generated-index'" to="/index/demo/api#generated-index">
+            <a id="sa-index_demo/api#generated-index" class="nav-sidebar-link">Generated Index</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/api#optional-parameter-args'" to="/index/demo/api#optional-parameter-args">
+            <a id="sa-index_demo/api#optional-parameter-args" class="nav-sidebar-link">Optional parameter args</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/api#data'" to="/index/demo/api#data">
+            <a id="sa-index_demo/api#data" class="nav-sidebar-link">Data</a>
+          </router-link>
+        </ul>
+
+    <div class="hide">None</div>
+    <router-link tag="li" to="/index/demo/long"><a id="sa-index_demo/long" class="nav-sidebar-link">Long Sticky Nav</a></router-link>
+
+      
+        <ul>
+        
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-1'" to="/index/demo/long#example-menu-1">
+            <a id="sa-index_demo/long#example-menu-1" class="nav-sidebar-link">Example Menu 1</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-2'" to="/index/demo/long#example-menu-2">
+            <a id="sa-index_demo/long#example-menu-2" class="nav-sidebar-link">Example Menu 2</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-3'" to="/index/demo/long#example-menu-3">
+            <a id="sa-index_demo/long#example-menu-3" class="nav-sidebar-link">Example Menu 3</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-4'" to="/index/demo/long#example-menu-4">
+            <a id="sa-index_demo/long#example-menu-4" class="nav-sidebar-link">Example Menu 4</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-5'" to="/index/demo/long#example-menu-5">
+            <a id="sa-index_demo/long#example-menu-5" class="nav-sidebar-link">Example Menu 5</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-6'" to="/index/demo/long#example-menu-6">
+            <a id="sa-index_demo/long#example-menu-6" class="nav-sidebar-link">Example Menu 6</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-7'" to="/index/demo/long#example-menu-7">
+            <a id="sa-index_demo/long#example-menu-7" class="nav-sidebar-link">Example Menu 7</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-8'" to="/index/demo/long#example-menu-8">
+            <a id="sa-index_demo/long#example-menu-8" class="nav-sidebar-link">Example Menu 8</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-9'" to="/index/demo/long#example-menu-9">
+            <a id="sa-index_demo/long#example-menu-9" class="nav-sidebar-link">Example Menu 9</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-10'" to="/index/demo/long#example-menu-10">
+            <a id="sa-index_demo/long#example-menu-10" class="nav-sidebar-link">Example Menu 10</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-11'" to="/index/demo/long#example-menu-11">
+            <a id="sa-index_demo/long#example-menu-11" class="nav-sidebar-link">Example Menu 11</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-12'" to="/index/demo/long#example-menu-12">
+            <a id="sa-index_demo/long#example-menu-12" class="nav-sidebar-link">Example Menu 12</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-13'" to="/index/demo/long#example-menu-13">
+            <a id="sa-index_demo/long#example-menu-13" class="nav-sidebar-link">Example Menu 13</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-14'" to="/index/demo/long#example-menu-14">
+            <a id="sa-index_demo/long#example-menu-14" class="nav-sidebar-link">Example Menu 14</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-15'" to="/index/demo/long#example-menu-15">
+            <a id="sa-index_demo/long#example-menu-15" class="nav-sidebar-link">Example Menu 15</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-16'" to="/index/demo/long#example-menu-16">
+            <a id="sa-index_demo/long#example-menu-16" class="nav-sidebar-link">Example Menu 16</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-17'" to="/index/demo/long#example-menu-17">
+            <a id="sa-index_demo/long#example-menu-17" class="nav-sidebar-link">Example Menu 17</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-18'" to="/index/demo/long#example-menu-18">
+            <a id="sa-index_demo/long#example-menu-18" class="nav-sidebar-link">Example Menu 18</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-19'" to="/index/demo/long#example-menu-19">
+            <a id="sa-index_demo/long#example-menu-19" class="nav-sidebar-link">Example Menu 19</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-menu-20'" to="/index/demo/long#example-menu-20">
+            <a id="sa-index_demo/long#example-menu-20" class="nav-sidebar-link">Example Menu 20</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-submenu-1'" to="/index/demo/long#example-submenu-1">
+            <a id="sa-index_demo/long#example-submenu-1" class="nav-sidebar-link">Example Submenu 1</a>
+          </router-link>
+          <router-link tag="li" v-scroll-to="'/index/demo/long#example-submenu-2'" to="/index/demo/long#example-submenu-2">
+            <a id="sa-index_demo/long#example-submenu-2" class="nav-sidebar-link">Example Submenu 2</a>
+          </router-link>
+        </ul>
+  </ul>
+                  <div class="hide">None</div>
+                  <router-link tag="li" to="/_modules/test_py_module/test"><a id="sa-_modules/test_py_module/test" class="nav-sidebar-link"></a></router-link>
+  
+  
+
+  <ul class="menu-sub">
+  
+  </ul>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="content-guide" >
+        <transition mode="out-in">
+          <router-view></router-view>
+        </transition>
+        <footer class="footer">
+          <div class="md-footer-copyright">
+            Created using <a href="http://www.sphinx-doc.org/">Sphinx</a>
+            3.3.1 and
+            <a href="https://github.com/justtopich/sphinx_lootnika_theme">Lootnika theme for Sphinx</a>
+           </div>
+        </footer>
+      </div>
+    </div>
+    </div>
+
+<script type="text/javascript">
+function get_routes() {
+ return [
+   
+    { path: '*', component: NotFoundPage }, 
+    { path: '/', component: httpVueLoader('index.vue') }, 
+    { path: '/index', component: httpVueLoader('index.vue') }, 
+    { path: '/index/demo/structure', component: httpVueLoader('demo/structure.vue') }, 
+    { path: '/index/demo/demo', component: httpVueLoader('demo/demo.vue') }, 
+    { path: '/index/demo/lists_tables', component: httpVueLoader('demo/lists_tables.vue') }, 
+    { path: '/index/demo/api', component: httpVueLoader('demo/api.vue') }, 
+    { path: '/index/demo/long', component: httpVueLoader('demo/long.vue') }, 
+    { path: '/_modules/test_py_module/test', component: httpVueLoader('_modules/test_py_module/test.vue') }, 
+ ]}
+</script>
+
+
+
+    <!--<script src="_static/documentation_options.js"></script>-->
+    <script src="_static/js/vue.js"></script>
+    <script src="_static/plugins/vue-router.min.js"></script>
+    <script src="_static/plugins/httpVueLoader.min.js"></script>
+    <script src="_static/plugins/vue-scrollto.js"></script>
+    <!-- <script src="_static/plugins/vuebar.js"></script> -->
+    <script src="_static/js/routes.js"></script>
+    <script src="_static/js/help.js"></script>
+
+
+  </body>
+</html>
