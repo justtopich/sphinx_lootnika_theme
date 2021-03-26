@@ -4,8 +4,6 @@ Sphinx theme created as Vue.js SPA with responsive design support.
 
 Based on [sphinx_press_theme](https://github.com/schettino72/sphinx_press_theme) by schettino72.
 
-Preview available at https://justtopich.github.io/sphinx_lootnika_example.github.io
-
 **This is beta version!**
 
 
