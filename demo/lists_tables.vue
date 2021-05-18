@@ -1,10 +1,11 @@
 <template>
   <div>
-    <div class="section" id="lists-tables">
+    
+    <section id="lists-tables">
 <h1>Lists &amp; Tables<a class="headerlink" href="#lists-tables" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="lists">
+<section id="lists">
 <h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="enumerated-lists">
+<section id="enumerated-lists">
 <h3>Enumerated Lists<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic">
 <li><p>Arabic numerals.</p>
@@ -40,8 +41,8 @@
 </li>
 <li><p>List items may also be auto-enumerated.</p></li>
 </ol>
-</div>
-<div class="section" id="definition-lists">
+</section>
+<section id="definition-lists">
 <h3>Definition Lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h3>
 <dl>
 <dt>Term</dt><dd><p>Definition</p>
@@ -63,8 +64,8 @@ in the line below that caused this?</p>
 <dt>Is it everything all at once?</dt><dd><p>Who knows?!</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="option-lists">
+</section>
+<section id="option-lists">
 <h3>Option Lists<a class="headerlink" href="#option-lists" title="Permalink to this headline">¶</a></h3>
 <p>For listing command-line options:</p>
 <dl class="option-list">
@@ -101,8 +102,8 @@ regardless of where it starts.</p>
 </dd>
 </dl>
 <p>There must be at least two spaces between the option and the description.</p>
-</div>
-<div class="section" id="field-list">
+</section>
+<section id="field-list">
 <h3>Field list<a class="headerlink" href="#field-list" title="Permalink to this headline">¶</a></h3>
 <dl class="field-list">
 <dt class="field-odd">Author</dt>
@@ -159,10 +160,10 @@ language, containing examples of all basic reStructuredText
 constructs and many advanced constructs.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="bullet-lists">
+</section>
+<section id="bullet-lists">
 <h3>Bullet Lists<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="simple">
+<section id="simple">
 <h4>Simple<a class="headerlink" href="#simple" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p>A simple list.</p></li>
@@ -182,8 +183,8 @@ constructs and many advanced constructs.</p>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="complex">
+</section>
+<section id="complex">
 <h4>Complex<a class="headerlink" href="#complex" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p>A bullet list</p>
@@ -215,8 +216,8 @@ constructs and many advanced constructs.</p>
 <p>This item has multiple paragraphs.</p>
 </li>
 </ul>
-</div>
-<div class="section" id="second-list-level">
+</section>
+<section id="second-list-level">
 <h4>Second list level<a class="headerlink" href="#second-list-level" title="Permalink to this headline">¶</a></h4>
 <ul>
 <li><p>here is a list in a second-level section.</p></li>
@@ -228,27 +229,18 @@ constructs and many advanced constructs.</p>
 <ul>
 <li><p>one more <code class="docutils literal notranslate"><span class="pre">with</span> <span class="pre">an</span> <span class="pre">inline</span> <span class="pre">literally</span></code>. <a class="reference external" href="http://www.yahoo.com">yahoo</a></p>
 <p>heh heh. child. try to beat this embed:</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">"""Test Module for sphinx_rtd_theme."""</span>
-
-
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
-
-    <span class="s2">"""Docstring for class Foo.</span>
-
-<span class="s2">    This text tests for the formatting of docstrings generated from output</span>
-<span class="s2">    ``sphinx.ext.autodoc``. Which contain reST, but sphinx nests it in the</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="linenos"> 2</span><span class="sd">"""Test Module for sphinx_rtd_theme."""</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span>    <span class="s2">"""Docstring for class Foo.</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="s2">    This text tests for the formatting of docstrings generated from output</span>
+<span class="linenos">10</span><span class="s2">    ``sphinx.ext.autodoc``. Which contain reST, but sphinx nests it in the</span>
 </pre></div>
-</td></tr></table></div>
+</div>
 </li>
 </ul>
 </li>
@@ -265,7 +257,7 @@ constructs and many advanced constructs.</p>
 </li>
 <li><p>and hehe</p></li>
 </ul>
-<div class="section" id="but-deeper-down-the-rabbit-hole">
+<section id="but-deeper-down-the-rabbit-hole">
 <h5>But deeper down the rabbit hole<a class="headerlink" href="#but-deeper-down-the-rabbit-hole" title="Permalink to this headline">¶</a></h5>
 <ul class="simple">
 <li><p>I kept saying that, “deeper down the rabbit hole”. <a class="reference external" href="http://www.yahoo.com">yahoo</a></p>
@@ -285,10 +277,10 @@ constructs and many advanced constructs.</p>
 </ul>
 </li>
 </ul>
-</div>
-</div>
-</div>
-<div class="section" id="hlists">
+</section>
+</section>
+</section>
+<section id="hlists">
 <h3>Hlists<a class="headerlink" href="#hlists" title="Permalink to this headline">¶</a></h3>
 <table class="hlist"><tr><td><ul class="simple">
 <li><p>First item</p></li>
@@ -303,23 +295,27 @@ constructs and many advanced constructs.</p>
 </td></tr></table>
 <p class="rubric">Hlist with images</p>
 <table class="hlist"><tr><td><ul>
-<li><div class="figure align-default" id="id11">
+<li><figure class="align-default" id="id11">
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id11" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </li>
 </ul>
 </td><td><ul>
-<li><div class="figure align-default" id="id12">
+<li><figure class="align-default" id="id12">
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<figcaption>
+<p><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id12" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 </li>
 </ul>
 </td></tr></table>
-</div>
-<div class="section" id="numbered-list">
+</section>
+<section id="numbered-list">
 <h3>Numbered List<a class="headerlink" href="#numbered-list" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li><p>One,</p></li>
@@ -341,11 +337,11 @@ Sed feugiat sagittis neque quis eleifend. Duis rutrum lectus sit amet mattis sus
 </ol>
 </li>
 </ul>
-</div>
-</div>
-<div class="section" id="tables">
+</section>
+</section>
+<section id="tables">
 <h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="grid-tables">
+<section id="grid-tables">
 <h3>Grid Tables<a class="headerlink" href="#grid-tables" title="Permalink to this headline">¶</a></h3>
 <p>Here’s a grid table followed by a simple table:</p>
 <table class="docutils align-default">
@@ -425,7 +421,7 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </tr>
 </tbody>
 </table>
-<div class="section" id="giant-tables">
+<section id="giant-tables">
 <h4>Giant Tables<a class="headerlink" href="#giant-tables" title="Permalink to this headline">¶</a></h4>
 <table class="docutils align-default">
 <colgroup>
@@ -512,9 +508,9 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-<div class="section" id="list-tables">
+</section>
+</section>
+<section id="list-tables">
 <h3>List Tables<a class="headerlink" href="#list-tables" title="Permalink to this headline">¶</a></h3>
 <table class="colwidths-given docutils align-default" id="id13">
 <caption><span class="caption-text">List tables can have captions like this one.</span><a class="headerlink" href="#id13" title="Permalink to this table">¶</a></caption>
@@ -556,23 +552,28 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 <col style="width: 50%"/>
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><div class="figure align-default" id="id15">
+<tr class="row-odd"><td><figure class="align-default" id="id15">
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">This is a short caption for a figure.</span><a class="headerlink" href="#id15" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 </td>
-<td><div class="figure align-default" id="id16">
+<td><figure class="align-default" id="id16">
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<figcaption>
+<p><span class="caption-text">This is a long caption for a figure. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 Donec porttitor dolor in odio posuere, vitae ornare libero mattis. In lobortis justo vestibulum nibh aliquet, non.</span><a class="headerlink" href="#id16" title="Permalink to this image">¶</a></p>
-</div>
+</figcaption>
+</figure>
 </td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-
+</section>
+</section>
+</section>
+    <div></div>
     <div id='vueBottomPage'></div>
     </div>
   </div>

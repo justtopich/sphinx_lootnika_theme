@@ -1,13 +1,14 @@
 <template>
   <div>
-    <div class="section" id="api-documentation-and-generated-content">
+    
+    <section id="api-documentation-and-generated-content">
 <h1>API documentation and generated content<a class="headerlink" href="#api-documentation-and-generated-content" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-test_py_module-test">
+<section id="module-test_py_module-test">
 <span id="test-py-module"></span><h2><code class="xref py py-mod docutils literal notranslate"><span class="pre">test_py_module</span></code><a class="headerlink" href="#module-test_py_module.test" title="Permalink to this headline">¶</a></h2>
 <p>Test Module for sphinx_rtd_theme.</p>
 <dl class="py class">
-<dt id="test_py_module-test-Foo">
-<em class="property">class </em><code class="sig-prename descclassname">test_py_module.test.</code><code class="sig-name descname">Foo</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">qux</span></em>, <em class="sig-param"><span class="n">spam</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo" v-scroll-to="'/_modules/test_py_module/test#Foo'"><span class="viewcode-link">[source]</span></router-link><a class="headerlink" href="#test_py_module.test.Foo" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Foo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">qux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo" v-scroll-to="'/_modules/test_py_module/test#Foo'"><span class="viewcode-link"><span class="pre">[source]</span></span></router-link><a class="headerlink" href="#test_py_module.test.Foo" title="Permalink to this definition">¶</a></dt>
 <dd><p>Docstring for class Foo.</p>
 <p>This text tests for the formatting of docstrings generated from output
 <code class="docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code>. Which contain reST, but sphinx nests it in the
@@ -30,8 +31,8 @@ docstring:</p>
 <p>Here is a link to <a class="reference internal" href="#test_py_module-test-Foo-capitalize"><code class="xref py py-meth docutils literal notranslate"><span class="pre">capitalize()</span></code></a>.
 Here is a link to <a class="reference internal" href="#test_py_module-test-Foo-__init__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">__init__()</span></code></a>.</p>
 <dl class="py method">
-<dt id="test_py_module-test-Foo-__init__">
-<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">qux</span></em>, <em class="sig-param"><span class="n">spam</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-__init__" v-scroll-to="'/_modules/test_py_module/test#Foo-__init__'"><span class="viewcode-link">[source]</span></router-link><a class="headerlink" href="#test_py_module.test.Foo.__init__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">qux</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">spam</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-__init__" v-scroll-to="'/_modules/test_py_module/test#Foo-__init__'"><span class="viewcode-link"><span class="pre">[source]</span></span></router-link><a class="headerlink" href="#test_py_module.test.Foo.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start the Foo.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -43,13 +44,13 @@ Here is a link to <a class="reference internal" href="#test_py_module-test-Foo-_
 </dl>
 </dd></dl>
 <dl class="py attribute">
-<dt id="test_py_module-test-Foo-__weakref__">
-<code class="sig-name descname">__weakref__</code><a class="headerlink" href="#test_py_module.test.Foo.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-__weakref__">
+<span class="sig-name descname"><span class="pre">__weakref__</span></span><a class="headerlink" href="#test_py_module.test.Foo.__weakref__" title="Permalink to this definition">¶</a></dt>
 <dd><p>list of weak references to the object (if defined)</p>
 </dd></dl>
 <dl class="py method">
-<dt id="test_py_module-test-Foo-add">
-<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">val1</span></em>, <em class="sig-param"><span class="n">val2</span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-add" v-scroll-to="'/_modules/test_py_module/test#Foo-add'"><span class="viewcode-link">[source]</span></router-link><a class="headerlink" href="#test_py_module.test.Foo.add" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-add">
+<span class="sig-name descname"><span class="pre">add</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">val1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">val2</span></span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-add" v-scroll-to="'/_modules/test_py_module/test#Foo-add'"><span class="viewcode-link"><span class="pre">[source]</span></span></router-link><a class="headerlink" href="#test_py_module.test.Foo.add" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the added values.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -64,8 +65,8 @@ Here is a link to <a class="reference internal" href="#test_py_module-test-Foo-_
 </dl>
 </dd></dl>
 <dl class="py method">
-<dt id="test_py_module-test-Foo-another_function">
-<code class="sig-name descname">another_function</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">a</span></em>, <em class="sig-param"><span class="n">b</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">kwargs</span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-another_function" v-scroll-to="'/_modules/test_py_module/test#Foo-another_function'"><span class="viewcode-link">[source]</span></router-link><a class="headerlink" href="#test_py_module.test.Foo.another_function" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-another_function">
+<span class="sig-name descname"><span class="pre">another_function</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-another_function" v-scroll-to="'/_modules/test_py_module/test#Foo-another_function'"><span class="viewcode-link"><span class="pre">[source]</span></span></router-link><a class="headerlink" href="#test_py_module.test.Foo.another_function" title="Permalink to this definition">¶</a></dt>
 <dd><p>Here is another function.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -101,19 +102,19 @@ hats you own: <span class="math notranslate nohighlight">\(a + b\)</span>.</p>
 </div>
 </dd></dl>
 <dl class="py attribute">
-<dt id="test_py_module-test-Foo-bar">
-<code class="sig-name descname">bar</code><em class="property"> = 1</em><a class="headerlink" href="#test_py_module.test.Foo.bar" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-bar">
+<span class="sig-name descname"><span class="pre">bar</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1</span></em><a class="headerlink" href="#test_py_module.test.Foo.bar" title="Permalink to this definition">¶</a></dt>
 <dd><p>Doc comment for class attribute Foo.bar.
 It can have multiple lines.</p>
 </dd></dl>
 <dl class="py attribute">
-<dt id="test_py_module-test-Foo-baz">
-<code class="sig-name descname">baz</code><em class="property"> = 2</em><a class="headerlink" href="#test_py_module.test.Foo.baz" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-baz">
+<span class="sig-name descname"><span class="pre">baz</span></span><em class="property"> <span class="pre">=</span> <span class="pre">2</span></em><a class="headerlink" href="#test_py_module.test.Foo.baz" title="Permalink to this definition">¶</a></dt>
 <dd><p>Docstring for class attribute Foo.baz.</p>
 </dd></dl>
 <dl class="py method">
-<dt id="test_py_module-test-Foo-capitalize">
-<code class="sig-name descname">capitalize</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">myvalue</span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-capitalize" v-scroll-to="'/_modules/test_py_module/test#Foo-capitalize'"><span class="viewcode-link">[source]</span></router-link><a class="headerlink" href="#test_py_module.test.Foo.capitalize" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-capitalize">
+<span class="sig-name descname"><span class="pre">capitalize</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">myvalue</span></span></em><span class="sig-paren">)</span><router-link class="reference internal" href="/_modules/test_py_module/test" to="/_modules/test_py_module/test#Foo-capitalize" v-scroll-to="'/_modules/test_py_module/test#Foo-capitalize'"><span class="viewcode-link"><span class="pre">[source]</span></span></router-link><a class="headerlink" href="#test_py_module.test.Foo.capitalize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return a string as uppercase.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -125,105 +126,105 @@ It can have multiple lines.</p>
 </dl>
 </dd></dl>
 <dl class="py attribute">
-<dt id="test_py_module-test-Foo-flox">
-<code class="sig-name descname">flox</code><em class="property"> = 1.5</em><a class="headerlink" href="#test_py_module.test.Foo.flox" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-flox">
+<span class="sig-name descname"><span class="pre">flox</span></span><em class="property"> <span class="pre">=</span> <span class="pre">1.5</span></em><a class="headerlink" href="#test_py_module.test.Foo.flox" title="Permalink to this definition">¶</a></dt>
 <dd><p>Doc comment for Foo.flox. One line only.</p>
 </dd></dl>
 <dl class="py attribute">
-<dt id="test_py_module-test-Foo-qux">
-<code class="sig-name descname">qux</code><a class="headerlink" href="#test_py_module.test.Foo.qux" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-qux">
+<span class="sig-name descname"><span class="pre">qux</span></span><a class="headerlink" href="#test_py_module.test.Foo.qux" title="Permalink to this definition">¶</a></dt>
 <dd><p>Doc comment for instance attribute qux.</p>
 </dd></dl>
 <dl class="py attribute">
-<dt id="test_py_module-test-Foo-spam">
-<code class="sig-name descname">spam</code><a class="headerlink" href="#test_py_module.test.Foo.spam" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Foo-spam">
+<span class="sig-name descname"><span class="pre">spam</span></span><a class="headerlink" href="#test_py_module.test.Foo.spam" title="Permalink to this definition">¶</a></dt>
 <dd><p>Docstring for instance attribute spam.</p>
 </dd></dl>
 </dd></dl>
-</div>
-<div class="section" id="c-api">
+</section>
+<section id="c-api">
 <h2>C++ API<a class="headerlink" href="#c-api" title="Permalink to this headline">¶</a></h2>
 <dl class="cpp type">
-<dt id="_CPPv46MyType">
-<span id="_CPPv36MyType"></span><span id="_CPPv26MyType"></span><span id="MyType"></span><em class="property">type </em><code class="sig-name descname">MyType</code><a class="headerlink" href="#_CPPv46MyType" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv46MyType">
+<span id="_CPPv36MyType"></span><span id="_CPPv26MyType"></span><span id="MyType"></span><span class="k"><span class="pre">type</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyType</span></span></span><a class="headerlink" href="#_CPPv46MyType" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>Some type</p>
 </dd></dl>
 <dl class="cpp function">
-<dt id="_CPPv43FooK6MyType">
-<span id="_CPPv33FooK6MyType"></span><span id="_CPPv23FooK6MyType"></span><span id="Foo__MyTypeC"></span><em class="property">const</em> <a class="reference internal" href="#_CPPv46MyType">MyType</a> <code class="sig-name descname">Foo</code><span class="sig-paren">(</span><em class="property">const</em> <a class="reference internal" href="#_CPPv46MyType">MyType</a> <em>bar</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43FooK6MyType" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv43FooK6MyType">
+<span id="_CPPv33FooK6MyType"></span><span id="_CPPv23FooK6MyType"></span><span id="Foo__MyTypeC"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv46MyType"><span class="n"><span class="pre">MyType</span></span></a><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">Foo</span></span></span><span class="sig-paren">(</span><span class="k"><span class="pre">const</span></span><span class="w"> </span><a class="reference internal" href="#_CPPv46MyType"><span class="n"><span class="pre">MyType</span></span></a><span class="w"> </span><span class="n sig-param"><span class="pre">bar</span></span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv43FooK6MyType" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>Some function type thing</p>
 </dd></dl>
 <dl class="cpp class">
-<dt id="_CPPv4I0_NSt6size_tEENSt5arrayE">
-<span id="_CPPv3I0_NSt6size_tEENSt5arrayE"></span><span id="_CPPv2I0_NSt6size_tEENSt5arrayE"></span>template&lt;typename <code class="sig-name descname">T</code>, std::size_t <code class="sig-name descname">N</code>&gt;<br/><em class="property">class </em><code class="sig-prename descclassname">std<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">array</code><a class="headerlink" href="#_CPPv4I0_NSt6size_tEENSt5arrayE" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv4I0_NSt6size_tEENSt5arrayE">
+<span id="_CPPv3I0_NSt6size_tEENSt5arrayE"></span><span id="_CPPv2I0_NSt6size_tEENSt5arrayE"></span><span class="k"><span class="pre">template</span></span><span class="p"><span class="pre">&lt;</span></span><span class="k"><span class="pre">typename</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">T</span></span></span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">size_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">N</span></span></span><span class="p"><span class="pre">&gt;</span></span><br/><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">array</span></span></span><a class="headerlink" href="#_CPPv4I0_NSt6size_tEENSt5arrayE" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>Some cpp class</p>
 </dd></dl>
 <dl class="cpp member">
-<dt id="_CPPv4N6Sphinx7versionE">
-<span id="_CPPv3N6Sphinx7versionE"></span><span id="_CPPv2N6Sphinx7versionE"></span><span id="Sphinx::version__float"></span>float <code class="sig-prename descclassname">Sphinx<code class="sig-prename descclassname">::</code></code><code class="sig-name descname">version</code><a class="headerlink" href="#_CPPv4N6Sphinx7versionE" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N6Sphinx7versionE">
+<span id="_CPPv3N6Sphinx7versionE"></span><span id="_CPPv2N6Sphinx7versionE"></span><span id="Sphinx::version__float"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-prename descclassname"><span class="n"><span class="pre">Sphinx</span></span><span class="p"><span class="pre">::</span></span></span><span class="sig-name descname"><span class="n"><span class="pre">version</span></span></span><a class="headerlink" href="#_CPPv4N6Sphinx7versionE" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>The description of Sphinx::version.</p>
 </dd></dl>
 <dl class="cpp var">
-<dt id="_CPPv47version">
-<span id="_CPPv37version"></span><span id="_CPPv27version"></span><span id="version__i"></span>int <code class="sig-name descname">version</code><a class="headerlink" href="#_CPPv47version" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv47version">
+<span id="_CPPv37version"></span><span id="_CPPv27version"></span><span id="version__i"></span><span class="kt"><span class="pre">int</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">version</span></span></span><a class="headerlink" href="#_CPPv47version" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>The description of version.</p>
 </dd></dl>
 <dl class="cpp type">
-<dt id="_CPPv44List">
-<span id="_CPPv34List"></span><span id="_CPPv24List"></span><span id="List"></span><em class="property">typedef </em>std::vector&lt;int&gt; <code class="sig-name descname">List</code><a class="headerlink" href="#_CPPv44List" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv44List">
+<span id="_CPPv34List"></span><span id="_CPPv24List"></span><span id="List"></span><span class="k"><span class="pre">typedef</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">vector</span></span><span class="p"><span class="pre">&lt;</span></span><span class="kt"><span class="pre">int</span></span><span class="p"><span class="pre">&gt;</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">List</span></span></span><a class="headerlink" href="#_CPPv44List" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>The description of List type.</p>
 </dd></dl>
 <dl class="cpp enum">
-<dt id="_CPPv46MyEnum">
-<span id="_CPPv36MyEnum"></span><span id="_CPPv26MyEnum"></span><em class="property">enum </em><code class="sig-name descname">MyEnum</code><a class="headerlink" href="#_CPPv46MyEnum" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv46MyEnum">
+<span id="_CPPv36MyEnum"></span><span id="_CPPv26MyEnum"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyEnum</span></span></span><a class="headerlink" href="#_CPPv46MyEnum" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>An unscoped enum.</p>
 <dl class="cpp enumerator">
-<dt id="_CPPv4N6MyEnum1AE">
-<span id="_CPPv3N6MyEnum1AE"></span><span id="_CPPv2N6MyEnum1AE"></span><em class="property">enumerator </em><code class="sig-name descname">A</code><a class="headerlink" href="#_CPPv4N6MyEnum1AE" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N6MyEnum1AE">
+<span id="_CPPv3N6MyEnum1AE"></span><span id="_CPPv2N6MyEnum1AE"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">A</span></span></span><a class="headerlink" href="#_CPPv4N6MyEnum1AE" title="Permalink to this definition">¶</a><br/></dt>
 <dd></dd></dl>
 </dd></dl>
 <dl class="cpp enum-class">
-<dt id="_CPPv412MyScopedEnum">
-<span id="_CPPv312MyScopedEnum"></span><span id="_CPPv212MyScopedEnum"></span><em class="property">enum class </em><code class="sig-name descname">MyScopedEnum</code><a class="headerlink" href="#_CPPv412MyScopedEnum" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv412MyScopedEnum">
+<span id="_CPPv312MyScopedEnum"></span><span id="_CPPv212MyScopedEnum"></span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="k"><span class="pre">class</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyScopedEnum</span></span></span><a class="headerlink" href="#_CPPv412MyScopedEnum" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>A scoped enum.</p>
 <dl class="cpp enumerator">
-<dt id="_CPPv4N12MyScopedEnum1BE">
-<span id="_CPPv3N12MyScopedEnum1BE"></span><span id="_CPPv2N12MyScopedEnum1BE"></span><em class="property">enumerator </em><code class="sig-name descname">B</code><a class="headerlink" href="#_CPPv4N12MyScopedEnum1BE" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N12MyScopedEnum1BE">
+<span id="_CPPv3N12MyScopedEnum1BE"></span><span id="_CPPv2N12MyScopedEnum1BE"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">B</span></span></span><a class="headerlink" href="#_CPPv4N12MyScopedEnum1BE" title="Permalink to this definition">¶</a><br/></dt>
 <dd></dd></dl>
 </dd></dl>
 <dl class="cpp enum-struct">
-<dt id="_CPPv422MyScopedVisibilityEnum">
-<span id="_CPPv322MyScopedVisibilityEnum"></span><span id="_CPPv222MyScopedVisibilityEnum"></span><em class="property">protected </em><em class="property">enum struct </em><code class="sig-name descname">MyScopedVisibilityEnum</code> : std::underlying_type&lt;MySpecificEnum&gt;::type<a class="headerlink" href="#_CPPv422MyScopedVisibilityEnum" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv422MyScopedVisibilityEnum">
+<span id="_CPPv322MyScopedVisibilityEnum"></span><span id="_CPPv222MyScopedVisibilityEnum"></span><span class="k"><span class="pre">protected</span></span><span class="w"> </span><span class="k"><span class="pre">enum</span></span><span class="w"> </span><span class="k"><span class="pre">struct</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">MyScopedVisibilityEnum</span></span></span><span class="w"> </span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">std</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">underlying_type</span></span><span class="p"><span class="pre">&lt;</span></span><span class="n"><span class="pre">MySpecificEnum</span></span><span class="p"><span class="pre">&gt;</span></span><span class="p"><span class="pre">::</span></span><span class="n"><span class="pre">type</span></span><a class="headerlink" href="#_CPPv422MyScopedVisibilityEnum" title="Permalink to this definition">¶</a><br/></dt>
 <dd><p>A scoped enum with non-default visibility, and with a specified underlying type.</p>
 <dl class="cpp enumerator">
-<dt id="_CPPv4N22MyScopedVisibilityEnum1BE">
-<span id="_CPPv3N22MyScopedVisibilityEnum1BE"></span><span id="_CPPv2N22MyScopedVisibilityEnum1BE"></span><em class="property">enumerator </em><code class="sig-name descname">B</code><a class="headerlink" href="#_CPPv4N22MyScopedVisibilityEnum1BE" title="Permalink to this definition">¶</a><br/></dt>
+<dt class="sig sig-object cpp" id="_CPPv4N22MyScopedVisibilityEnum1BE">
+<span id="_CPPv3N22MyScopedVisibilityEnum1BE"></span><span id="_CPPv2N22MyScopedVisibilityEnum1BE"></span><span class="k"><span class="pre">enumerator</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">B</span></span></span><a class="headerlink" href="#_CPPv4N22MyScopedVisibilityEnum1BE" title="Permalink to this definition">¶</a><br/></dt>
 <dd></dd></dl>
 </dd></dl>
-</div>
-<div class="section" id="javascript-api">
+</section>
+<section id="javascript-api">
 <h2>JavaScript API<a class="headerlink" href="#javascript-api" title="Permalink to this headline">¶</a></h2>
 <span class="target" id="module-module_a-submodule"></span><ul class="simple">
 <li><p>Link to <a class="reference internal" href="#module_a-submodule-ModTopLevel"><code class="xref js js-class docutils literal notranslate"><span class="pre">ModTopLevel()</span></code></a></p></li>
 </ul>
 <dl class="js class">
-<dt id="module_a-submodule-ModTopLevel">
-<em class="property">class </em><code class="sig-prename descclassname">module_a.submodule.</code><code class="sig-name descname">ModTopLevel</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object js" id="module_a-submodule-ModTopLevel">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">module_a.submodule.</span></span><span class="sig-name descname"><span class="pre">ModTopLevel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel" title="Permalink to this definition">¶</a></dt>
 <dd><ul class="simple">
 <li><p>Link to <a class="reference internal" href="#module_a-submodule-ModTopLevel-mod_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">mod_child_1()</span></code></a></p></li>
 <li><p>Link to <a class="reference internal" href="#module_a-submodule-ModTopLevel-mod_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">ModTopLevel.mod_child_1()</span></code></a></p></li>
 </ul>
 </dd></dl>
 <dl class="js method">
-<dt id="module_a-submodule-ModTopLevel-mod_child_1">
-<code class="sig-prename descclassname">ModTopLevel.</code><code class="sig-name descname">mod_child_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel.mod_child_1" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object js" id="module_a-submodule-ModTopLevel-mod_child_1">
+<span class="sig-prename descclassname"><span class="pre">ModTopLevel.</span></span><span class="sig-name descname"><span class="pre">mod_child_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel.mod_child_1" title="Permalink to this definition">¶</a></dt>
 <dd><ul class="simple">
 <li><p>Link to <a class="reference internal" href="#module_a-submodule-ModTopLevel-mod_child_2"><code class="xref js js-meth docutils literal notranslate"><span class="pre">mod_child_2()</span></code></a></p></li>
 </ul>
 </dd></dl>
 <dl class="js method">
-<dt id="module_a-submodule-ModTopLevel-mod_child_2">
-<code class="sig-prename descclassname">ModTopLevel.</code><code class="sig-name descname">mod_child_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel.mod_child_2" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object js" id="module_a-submodule-ModTopLevel-mod_child_2">
+<span class="sig-prename descclassname"><span class="pre">ModTopLevel.</span></span><span class="sig-name descname"><span class="pre">mod_child_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_a.submodule.ModTopLevel.mod_child_2" title="Permalink to this definition">¶</a></dt>
 <dd><ul class="simple">
 <li><p>Link to <a class="reference internal" href="#module_a-submodule-ModTopLevel-mod_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">module_a.submodule.ModTopLevel.mod_child_1()</span></code></a></p></li>
 </ul>
@@ -232,36 +233,36 @@ It can have multiple lines.</p>
 <li><p>Link to <code class="xref js js-class docutils literal notranslate"><span class="pre">ModTopLevel()</span></code></p></li>
 </ul>
 <dl class="js class">
-<dt id="module_b-submodule-ModNested">
-<em class="property">class </em><code class="sig-prename descclassname">module_b.submodule.</code><code class="sig-name descname">ModNested</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object js" id="module_b-submodule-ModNested">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">module_b.submodule.</span></span><span class="sig-name descname"><span class="pre">ModNested</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="js method">
-<dt id="module_b-submodule-ModNested-nested_child_1">
-<code class="sig-prename descclassname">ModNested.</code><code class="sig-name descname">nested_child_1</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested.nested_child_1" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object js" id="module_b-submodule-ModNested-nested_child_1">
+<span class="sig-prename descclassname"><span class="pre">ModNested.</span></span><span class="sig-name descname"><span class="pre">nested_child_1</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested.nested_child_1" title="Permalink to this definition">¶</a></dt>
 <dd><ul class="simple">
 <li><p>Link to <a class="reference internal" href="#module_b-submodule-ModNested-nested_child_2"><code class="xref js js-meth docutils literal notranslate"><span class="pre">nested_child_2()</span></code></a></p></li>
 </ul>
 </dd></dl>
 <dl class="js method">
-<dt id="module_b-submodule-ModNested-nested_child_2">
-<code class="sig-prename descclassname">ModNested.</code><code class="sig-name descname">nested_child_2</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested.nested_child_2" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object js" id="module_b-submodule-ModNested-nested_child_2">
+<span class="sig-prename descclassname"><span class="pre">ModNested.</span></span><span class="sig-name descname"><span class="pre">nested_child_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#module_b.submodule.ModNested.nested_child_2" title="Permalink to this definition">¶</a></dt>
 <dd><ul class="simple">
 <li><p>Link to <a class="reference internal" href="#module_b-submodule-ModNested-nested_child_1"><code class="xref js js-meth docutils literal notranslate"><span class="pre">nested_child_1()</span></code></a></p></li>
 </ul>
 </dd></dl>
 </dd></dl>
-</div>
-<div class="section" id="generated-index">
+</section>
+<section id="generated-index">
 <h2>Generated Index<a class="headerlink" href="#generated-index" title="Permalink to this headline">¶</a></h2>
 <p>Part of the sphinx build process in generate and index file: <router-link class="reference internal" href="../genindex" to="../genindex"><span class="std std-ref">Index</span></router-link>.</p>
-</div>
-<div class="section" id="optional-parameter-args">
+</section>
+<section id="optional-parameter-args">
 <h2>Optional parameter args<a class="headerlink" href="#optional-parameter-args" title="Permalink to this headline">¶</a></h2>
 <p>At this point optional parameters <a class="reference external" href="https://groups.google.com/forum/#!topic/sphinx-users/_qfsVT5Vxpw">cannot be generated from code</a>.
 However, some projects will manually do it, like so:</p>
 <p>This example comes from <a class="reference external" href="http://django-payments.readthedocs.org/en/latest/modules.html#payments.authorizenet.AuthorizeNetProvide">django-payments module docs</a>.</p>
 <dl class="py class">
-<dt id="test_py_module-test-payments-dotpay-DotpayProvider">
-<em class="property">class </em><code class="sig-prename descclassname">payments.dotpay.</code><code class="sig-name descname">DotpayProvider</code><span class="sig-paren">(</span><em class="sig-param">seller_id</em>, <em class="sig-param">pin</em><span class="optional">[</span>, <em class="sig-param">channel=0</em><span class="optional">[</span>, <em class="sig-param">lock=False</em><span class="optional">]</span>, <em class="sig-param">lang='pl'</em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#test_py_module.test.payments.dotpay.DotpayProvider" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-payments-dotpay-DotpayProvider">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">payments.dotpay.</span></span><span class="sig-name descname"><span class="pre">DotpayProvider</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">seller_id</span></em>, <em class="sig-param"><span class="pre">pin</span></em><span class="optional">[</span>, <em class="sig-param"><span class="pre">channel=0</span></em><span class="optional">[</span>, <em class="sig-param"><span class="pre">lock=False</span></em><span class="optional">]</span>, <em class="sig-param"><span class="pre">lang='pl'</span></em><span class="optional">]</span><span class="sig-paren">)</span><a class="headerlink" href="#test_py_module.test.payments.dotpay.DotpayProvider" title="Permalink to this definition">¶</a></dt>
 <dd><p>This backend implements payments using a popular Polish gateway, <a class="reference external" href="http://www.dotpay.pl">Dotpay.pl</a>.</p>
 <p>Due to API limitations there is no support for transferring purchased items.</p>
 <dl class="field-list simple">
@@ -276,21 +277,22 @@ However, some projects will manually do it, like so:</p>
 </dd>
 </dl>
 </dd></dl>
-</div>
-<div class="section" id="data">
+</section>
+<section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
 <dl class="py data">
-<dt id="test_py_module-test-Data_item_1">
-<code class="sig-prename descclassname">test_py_module.test.</code><code class="sig-name descname">Data_item_1</code><a class="headerlink" href="#test_py_module.test.Data_item_1" title="Permalink to this definition">¶</a></dt>
-<dt id="test_py_module-test-Data_item_2">
-<code class="sig-prename descclassname">test_py_module.test.</code><code class="sig-name descname">Data_item_2</code><a class="headerlink" href="#test_py_module.test.Data_item_2" title="Permalink to this definition">¶</a></dt>
-<dt id="test_py_module-test-Data_item_3">
-<code class="sig-prename descclassname">test_py_module.test.</code><code class="sig-name descname">Data_item_3</code><a class="headerlink" href="#test_py_module.test.Data_item_3" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Data_item_1">
+<span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Data_item_1</span></span><a class="headerlink" href="#test_py_module.test.Data_item_1" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Data_item_2">
+<span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Data_item_2</span></span><a class="headerlink" href="#test_py_module.test.Data_item_2" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="test_py_module-test-Data_item_3">
+<span class="sig-prename descclassname"><span class="pre">test_py_module.test.</span></span><span class="sig-name descname"><span class="pre">Data_item_3</span></span><a class="headerlink" href="#test_py_module.test.Data_item_3" title="Permalink to this definition">¶</a></dt>
 <dd><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce congue elit eu hendrerit mattis.</p>
 </dd></dl>
 <p>Some data link <a class="reference internal" href="#test_py_module-test-Data_item_1"><code class="xref py py-data docutils literal notranslate"><span class="pre">Data_item_1</span></code></a>.</p>
-</div>
-
+</section>
+</section>
+    <div></div>
     <div id='vueBottomPage'></div>
     </div>
   </div>

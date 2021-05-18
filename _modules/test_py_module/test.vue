@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <h1>Source code for test_py_module.test</h1><div class="highlight"><pre>
 <span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="sd">"""Test Module for sphinx_rtd_theme."""</span>
@@ -114,7 +115,8 @@
 <span class="sd">            This is deprecated since 3.0</span>
 <span class="sd">        """</span>
         <span class="k">return</span> <span class="nb">sum</span><span class="p">(</span><span class="n">kwargs</span><span class="o">.</span><span class="n">values</span><span class="p">())</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">kwargs</span><span class="p">),</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span></div></div>
-</pre
+</pre></div
+    <div></div>
     <div id='vueBottomPage'></div>
     </div>
   </div>

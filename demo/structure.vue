@@ -1,6 +1,7 @@
 <template>
   <div>
-    <div class="section" id="structural-elements">
+    
+    <section id="structural-elements">
 <h1>Structural Elements<a class="headerlink" href="#structural-elements" title="Permalink to this headline">¶</a></h1>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lorem neque, interdum in ipsum nec,
 finibus dictum velit. Ut eu efficitur arcu, id aliquam erat. In sit amet diam gravida, imperdiet tellus eu,
@@ -13,7 +14,7 @@ Aliquam accumsan feugiat ligula, nec fringilla libero commodo sed. Proin et erat
 Praesent dignissim mi nec ornare elementum. Nunc eu augue vel sem dignissim cursus sed et nulla.
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 Pellentesque dictum dui sem, non placerat tortor rhoncus in. Sed placerat nulla at rhoncus iaculis.</p>
-<div class="section" id="document-section">
+<section id="document-section">
 <h2>Document Section<a class="headerlink" href="#document-section" title="Permalink to this headline">¶</a></h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum nulla vel neque venenatis,
 nec placerat lorem placerat. Cras purus eros, gravida vitae tincidunt id, vehicula nec nulla.
@@ -21,7 +22,7 @@ Fusce aliquet auctor cursus. Phasellus ex neque, vestibulum non est vitae, viver
 Donec vestibulum convallis justo, a faucibus lorem vulputate vel. Aliquam cursus odio eu felis sodales aliquet.
 Aliquam erat volutpat. Maecenas eget dictum mauris. Suspendisse arcu eros, condimentum eget risus sed,
 luctus efficitur arcu. Cras ut dictum mi. Nulla congue interdum lorem, semper semper enim commodo nec.</p>
-<div class="section" id="document-subsection">
+<section id="document-subsection">
 <h3>Document Subsection<a class="headerlink" href="#document-subsection" title="Permalink to this headline">¶</a></h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur in eros et blandit. Nunc maximus,
 nisl at auctor vestibulum, justo ex sollicitudin ligula, id faucibus urna orci tristique nisl.
@@ -31,7 +32,7 @@ Duis dictum elit orci, tincidunt imperdiet sem pellentesque et. In vehicula pell
 Phasellus a turpis sollicitudin, bibendum massa et, imperdiet neque. Integer quis sapien in magna rutrum bibendum.
 Integer cursus ex sed magna vehicula finibus. Proin tempus orci quis dolor tempus, nec condimentum odio vestibulum.
 Etiam efficitur sollicitudin libero, tincidunt volutpat ligula interdum sed.</p>
-<div class="section" id="document-subsubsection">
+<section id="document-subsubsection">
 <h4>Document Subsubsection<a class="headerlink" href="#document-subsubsection" title="Permalink to this headline">¶</a></h4>
 <p>Donec non rutrum lorem. Aenean sagittis metus at pharetra fringilla. Nunc sapien dolor, cursus sed nisi at,
 pretium tristique lectus. Sed pellentesque leo lectus, et convallis ipsum euismod a.
@@ -39,24 +40,24 @@ Integer at leo vitae felis pretium aliquam fringilla quis odio. Sed pharetra eni
 Maecenas at pharetra tortor. Morbi semper eget mi vel finibus. Cras rutrum nulla eros, id feugiat arcu pellentesque ut.
 Sed finibus tortor ac nisi ultrices viverra. Duis feugiat malesuada sapien, at commodo ante porttitor ac.
 Curabitur posuere mauris mi, vel ornare orci scelerisque sit amet. Suspendisse nec fringilla dui.</p>
-<div class="section" id="document-paragraph">
+<section id="document-paragraph">
 <h5>Document Paragraph<a class="headerlink" href="#document-paragraph" title="Permalink to this headline">¶</a></h5>
 <p>Pellentesque nec est in odio ultrices elementum. Vestibulum et hendrerit sapien, quis vulputate turpis.
 Suspendisse potenti. Curabitur tristique sit amet lectus non viverra. Phasellus rutrum dapibus turpis sed imperdiet.
 Mauris maximus viverra ante. Donec eu egestas mauris. Morbi vulputate tincidunt euismod. Integer vel porttitor neque.
 Donec at lacus suscipit, lacinia lectus vel, sagittis lectus.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="structural-elements-2">
+</section>
+</section>
+</section>
+</section>
+</section>
+<section id="structural-elements-2">
 <h1>Structural Elements 2<a class="headerlink" href="#structural-elements-2" title="Permalink to this headline">¶</a></h1>
 <p>Etiam turpis ante, luctus sed velit tristique, finibus volutpat dui. Nam sagittis vel ante nec malesuada.
 Praesent dignissim mi nec ornare elementum. Nunc eu augue vel sem dignissim cursus sed et nulla.
 Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
 Pellentesque dictum dui sem, non placerat tortor rhoncus in. Sed placerat nulla at rhoncus iaculis.</p>
-<div class="section" id="id1">
+<section id="id1">
 <h2>Document Section<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed condimentum nulla vel neque venenatis,
 nec placerat lorem placerat. Cras purus eros, gravida vitae tincidunt id, vehicula nec nulla.
@@ -64,12 +65,14 @@ Fusce aliquet auctor cursus. Phasellus ex neque, vestibulum non est vitae, viver
 Donec vestibulum convallis justo, a faucibus lorem vulputate vel. Aliquam cursus odio eu felis sodales aliquet.
 Aliquam erat volutpat. Maecenas eget dictum mauris. Suspendisse arcu eros, condimentum eget risus sed,
 luctus efficitur arcu. Cras ut dictum mi. Nulla congue interdum lorem, semper semper enim commodo nec.</p>
-<div class="section" id="id2">
+<section id="id2">
 <h3>Document Subsection<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<div class="figure align-right" id="id3" style="width: 200px">
+<figure class="align-right" id="id3" style="width: 200px">
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">This is a caption for a figure. Text should wrap around the caption.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-text">This is a caption for a figure. Text should wrap around the caption.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur in eros et blandit. Nunc maximus,
 nisl at auctor vestibulum, justo ex sollicitudin ligula, id faucibus urna orci tristique nisl.
 Duis auctor rutrum orci, in ornare lacus condimentum quis. Quisque arcu velit, facilisis quis interdum ac,
@@ -82,9 +85,10 @@ Vivamus sagittis risus et egestas commodo.Cras venenatis arcu in pharetra interd
 Donec quis metus porttitor tellus cursus lobortis. Quisque et orci magna. Fusce rhoncus mi mi,
 at vehicula massa rhoncus quis. Mauris augue leo, pretium eget molestie vitae, efficitur nec nulla.
 In hac habitasse platea dictumst. Sed sit amet imperdiet purus.</p>
-</div>
-</div>
-
+</section>
+</section>
+</section>
+    <div></div>
     <div id='vueBottomPage'></div>
     </div>
   </div>

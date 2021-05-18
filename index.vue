@@ -1,12 +1,13 @@
 <template>
   <div>
-    <div class="section" id="sample-sphinx-documentation">
+    
+    <section id="sample-sphinx-documentation">
 <h1>Sample Sphinx Documentation<a class="headerlink" href="#sample-sphinx-documentation" title="Permalink to this headline">¶</a></h1>
 <p>This is a <em>very</em> rudimentary sample page for Sphinx based documentation.</p>
 <p>In case you’re looking for a lot of fairly extensive pages, that stretch the
 theme in as many reasonable ways as possible, consider scrolling right to the
 end of this page and looking at the Demo Documentation below.</p>
-<div class="section" id="quick-inline-markup-demo">
+<section id="quick-inline-markup-demo">
 <h2>Quick Inline Markup Demo<a class="headerlink" href="#quick-inline-markup-demo" title="Permalink to this headline">¶</a></h2>
 <p>Inline markup in reStructuredText is pretty powerful. You can have <em>emphasis</em>,
 <strong>strong emphasis</strong>, <code class="docutils literal notranslate"><span class="pre">inline</span> <span class="pre">literals</span></code>, external hyperlinks with embedded
@@ -28,25 +29,17 @@ explicit roles for <em>standard</em> <strong>inline</strong> <code class="docuti
 importance.</p>
 </div>
 <p>Or, maybe, you want to present a code block to the user.</p>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="sd">"""Just a small code example"""</span>
-
-<span class="k">class</span> <span class="nc">Demo</span><span class="p">:</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-<span class="hll">        <span class="bp">self</span><span class="o">.</span><span class="n">ready</span> <span class="o">=</span> <span class="kc">True</span>
-</span>
-    <span class="k">def</span> <span class="nf">how_ready_are_we</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<span class="hll">        <span class="k">return</span> <span class="s2">"very"</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ready</span> <span class="k">else</span> <span class="s2">"not at all"</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="sd">"""Just a small code example"""</span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="k">class</span> <span class="nc">Demo</span><span class="p">:</span>
+<span class="linenos">4</span>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="linenos">5</span>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<span class="hll"><span class="linenos">6</span>        <span class="bp">self</span><span class="o">.</span><span class="n">ready</span> <span class="o">=</span> <span class="kc">True</span>
+</span><span class="linenos">7</span>
+<span class="linenos">8</span>    <span class="k">def</span> <span class="nf">how_ready_are_we</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="hll"><span class="linenos">9</span>        <span class="k">return</span> <span class="s2">"very"</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">ready</span> <span class="k">else</span> <span class="s2">"not at all"</span>
 </span></pre></div>
-</td></tr></table></div>
+</div>
 <div class="toctree-wrapper compound">
 <p class="caption"><span class="caption-text">Demo Documentation</span></p>
 <ul>
@@ -129,8 +122,9 @@ importance.</p>
 </li>
 </ul>
 </div>
-</div>
-
+</section>
+</section>
+    <div></div>
     <div id='vueBottomPage'></div>
     </div>
   </div>

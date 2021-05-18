@@ -1,8 +1,9 @@
 <template>
   <div>
-    <div class="section" id="paragraph-level-markup">
+    
+    <section id="paragraph-level-markup">
 <h1>Paragraph Level Markup<a class="headerlink" href="#paragraph-level-markup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="inline-markup">
+<section id="inline-markup">
 <h2>Inline Markup<a class="headerlink" href="#inline-markup" title="Permalink to this headline">¶</a></h2>
 <p>Paragraphs contain text and may contain inline markup: <em>emphasis</em>, <strong>strong emphasis</strong>, <code class="docutils literal notranslate"><span class="pre">inline</span> <span class="pre">literals</span></code>,
 standalone hyperlinks (<a class="reference external" href="http://www.python.org">http://www.python.org</a>), external hyperlinks (<a class="reference external" href="http://www.python.org/">Python</a> <a class="footnote-reference brackets" href="#id29" id="id30">5</a>), internal cross-references (<a class="reference internal" href="#example">example</a>),
@@ -20,7 +21,7 @@ and explicit roles for <em>standard</em> <strong>inline</strong> <code class="do
 <p>GUI labels are a useful way to indicate that <span class="guilabel">Some action</span> is to be taken by the user.
 The GUI label should not run over <code class="docutils literal notranslate"><span class="pre">line-height</span></code> so as not to <span class="guilabel">interfere</span> with text from adjacent lines.</p>
 <p>Key-bindings indicate that the read is to press a button on the keyboard or mouse,
-for example <kbd class="kbd docutils literal notranslate">MMB</kbd> and <kbd class="kbd docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">MMB</kbd></kbd>. Another useful markup to indicate a user action
+for example <kbd class="kbd docutils literal notranslate">MMB</kbd> and <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">MMB</kbd></kbd>. Another useful markup to indicate a user action
 is to use <code class="docutils literal notranslate"><span class="pre">menuselection</span></code> this can be used to show short and long menus in software.
 For example, and <code class="docutils literal notranslate"><span class="pre">menuselection</span></code> can be seen here that breaks is too long to fit on this line.
 <span class="menuselection">My ‣ Software ‣ Some menu ‣ Some sub menu 1 ‣ sub menu 2</span>.</p>
@@ -31,8 +32,8 @@ For example, and <code class="docutils literal notranslate"><span class="pre">me
 <span class="pre">spacing</span>    <span class="pre">between</span> <span class="pre">the</span>    <span class="pre">words</span> <span class="pre">of</span>    <span class="pre">this</span> <span class="pre">sentence</span>    <span class="pre">(words</span>
 <span class="pre">should</span>    <span class="pre">be</span> <span class="pre">grouped</span>    <span class="pre">in</span> <span class="pre">pairs).</span></code></p>
 <p>If the <code class="docutils literal notranslate"><span class="pre">--pep-references</span></code> option was supplied, there should be a live link to PEP 258 here.</p>
-</div>
-<div class="section" id="math">
+</section>
+<section id="math">
 <h2>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h2>
 <p>This is a test. Here is an equation:
 <span class="math notranslate nohighlight">\(X_{0:5} = (X_0, X_1, X_2, X_3, X_4)\)</span>.
@@ -45,13 +46,13 @@ Here is another:</p>
 \left( \sin \theta \, \frac{\partial f}{\partial \theta} \right) +
 \frac{1}{r^2 \sin^2\theta} \frac{\partial^2 f}{\partial \phi^2}\]</div>
 <p>You can add a link to equations like the one above <a class="reference internal" href="#equation-this-is-a-label">(1)</a> by using <code class="docutils literal notranslate"><span class="pre">:eq:</span></code>.</p>
-</div>
-<div class="section" id="meta">
+</section>
+<section id="meta">
 <h2>Meta<a class="headerlink" href="#meta" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="blocks">
+</section>
+<section id="blocks">
 <h2>Blocks<a class="headerlink" href="#blocks" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="literal-blocks">
+<section id="literal-blocks">
 <h3>Literal Blocks<a class="headerlink" href="#literal-blocks" title="Permalink to this headline">¶</a></h3>
 <p>Literal blocks are indicated with a double-colon (“::”) at the end of
 the preceding paragraph (over there <code class="docutils literal notranslate"><span class="pre">--&gt;</span></code>).  They can be indented:</p>
@@ -67,8 +68,8 @@ the preceding paragraph (over there <code class="docutils literal notranslate"><
 &gt; Why didn't I think of that?
 </pre></div>
 </div>
-</div>
-<div class="section" id="line-blocks">
+</section>
+<section id="line-blocks">
 <h3>Line Blocks<a class="headerlink" href="#line-blocks" title="Permalink to this headline">¶</a></h3>
 <div class="line-block">
 <div class="line">This is a line block.  It ends with a blank line.</div>
@@ -116,8 +117,8 @@ the left edge of the text above it.</div>
 <div class="line">Singing…</div>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="block-quotes">
+</section>
+<section id="block-quotes">
 <h3>Block Quotes<a class="headerlink" href="#block-quotes" title="Permalink to this headline">¶</a></h3>
 <p>Block quotes consist of indented body elements:</p>
 <blockquote>
@@ -128,8 +129,8 @@ far end.  That is my theory, it is mine, and belongs to me and I
 own it, and what it is too.</p>
 <p class="attribution">—Anne Elk (Miss)</p>
 </div></blockquote>
-</div>
-<div class="section" id="doctest-blocks">
+</section>
+<section id="doctest-blocks">
 <h3>Doctest Blocks<a class="headerlink" href="#doctest-blocks" title="Permalink to this headline">¶</a></h3>
 <div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">'Python-specific usage examples; begun with "&gt;&gt;&gt;"'</span>
 <span class="go">Python-specific usage examples; begun with "&gt;&gt;&gt;"</span>
@@ -137,8 +138,8 @@ own it, and what it is too.</p>
 <span class="go">(cut and pasted from interactive Python sessions)</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="code-blocks">
+</section>
+<section id="code-blocks">
 <h3>Code Blocks<a class="headerlink" href="#code-blocks" title="Permalink to this headline">¶</a></h3>
 <pre class="literal-block"># parsed-literal test
 curl -O <a class="reference external" href="http://someurl/release">http://someurl/release</a>-.tar-gz</pre>
@@ -167,30 +168,26 @@ curl -O <a class="reference external" href="http://someurl/release">http://someu
 </pre></div>
 </div>
 </div>
-<div class="section" id="emphasized-lines-with-line-numbers">
+<section id="emphasized-lines-with-line-numbers">
 <h4>Emphasized lines with line numbers<a class="headerlink" href="#emphasized-lines-with-line-numbers" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
-    <span class="n">interesting</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="hll">    <span class="nb">print</span> <span class="s1">'This line is highlighted.'</span>
-</span>    <span class="nb">print</span> <span class="s1">'This one is not...'</span>
-<span class="hll">    <span class="nb">print</span> <span class="s1">'...but this one is.'</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">some_function</span><span class="p">():</span>
+<span class="linenos">2</span>    <span class="n">interesting</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="hll"><span class="linenos">3</span>    <span class="nb">print</span> <span class="s1">'This line is highlighted.'</span>
+</span><span class="linenos">4</span>    <span class="nb">print</span> <span class="s1">'This one is not...'</span>
+<span class="hll"><span class="linenos">5</span>    <span class="nb">print</span> <span class="s1">'...but this one is.'</span>
 </span></pre></div>
-</td></tr></table></div>
 </div>
-</div>
-</div>
-<div class="section" id="sidebar">
+</section>
+</section>
+</section>
+<section id="sidebar">
 <h2>Sidebar<a class="headerlink" href="#sidebar" title="Permalink to this headline">¶</a></h2>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">Ch’ien / The Creative</p>
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
 <p><em>Above</em> CH’IEN THE CREATIVE, HEAVEN</p>
 <p><em>Below</em> CH’IEN THE CREATIVE, HEAVEN</p>
-</div>
+</aside>
 <p>The first hexagram is made up of six unbroken lines. These unbroken lines stand for the primal power,
 which is light-giving, active, strong, and of the spirit. The hexagram is consistently strong in character,
 and since it is without weakness, its essence is power or energy. Its image is heaven.
@@ -201,101 +198,62 @@ Thus the hexagram includes also the power of time and the power of persisting in
 on the universe and of its action on the world of men. In relation to the universe, the hexagram expresses the strong,
 creative action of the Deity. In relation to the human world, it denotes the creative action of the holy man or sage,
 of the ruler or leader of men, who through his power awakens and develops their higher nature.</p>
-<div class="section" id="code-with-sidebar">
+<section id="code-with-sidebar">
 <h3>Code with Sidebar<a class="headerlink" href="#code-with-sidebar" title="Permalink to this headline">¶</a></h3>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">A code example</p>
 <p>With a sidebar on the right.</p>
-</div>
+</aside>
 <div class="literal-block-wrapper docutils container" id="id24">
 <div class="code-block-caption"><span class="caption-text">Literal includes can also have captions.</span><a class="headerlink" href="#id24" title="Permalink to this code">¶</a></div>
-<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="sd">"""Test Module for sphinx_rtd_theme."""</span>
-
-
-<span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
-
-    <span class="sd">"""Docstring for class Foo.</span>
-
-<span class="sd">    This text tests for the formatting of docstrings generated from output</span>
-<span class="sd">    ``sphinx.ext.autodoc``. Which contain reST, but sphinx nests it in the</span>
-<span class="sd">    ``&lt;dl&gt;``, and ``&lt;dt&gt;`` tags. Also, ``&lt;tt&gt;`` is used for class, method names</span>
-<span class="sd">    and etc, but those will *always* have the ``.descname`` or</span>
-<span class="sd">    ``.descclassname`` class.</span>
-
-<span class="sd">    Normal ``&lt;tt&gt;`` (like the &lt;tt&gt; I just wrote here) needs to be shown with</span>
-<span class="sd">    the same style as anything else with ````this type of markup````.</span>
-
-<span class="sd">    It's common for programmers to give a code example inside of their</span>
-<span class="sd">    docstring::</span>
-
-<span class="sd">        from test_py_module import Foo</span>
-
-<span class="sd">        myclass = Foo()</span>
-<span class="sd">        myclass.dothismethod('with this argument')</span>
-<span class="sd">        myclass.flush()</span>
-
-<span class="sd">        print(myclass)</span>
-
-
-<span class="sd">    Here is a link to :py:meth:`capitalize`.</span>
-<span class="sd">    Here is a link to :py:meth:`__init__`.</span>
-
-<span class="sd">    """</span>
-
-    <span class="c1">#: Doc comment for class attribute Foo.bar.</span>
-    <span class="c1">#: It can have multiple lines.</span>
-    <span class="n">bar</span> <span class="o">=</span> <span class="mi">1</span>
-
-    <span class="n">flox</span> <span class="o">=</span> <span class="mf">1.5</span>  <span class="c1">#: Doc comment for Foo.flox. One line only.</span>
-
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="linenos"> 2</span><span class="sd">"""Test Module for sphinx_rtd_theme."""</span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="k">class</span> <span class="nc">Foo</span><span class="p">:</span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span>    <span class="sd">"""Docstring for class Foo.</span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="sd">    This text tests for the formatting of docstrings generated from output</span>
+<span class="linenos">10</span><span class="sd">    ``sphinx.ext.autodoc``. Which contain reST, but sphinx nests it in the</span>
+<span class="linenos">11</span><span class="sd">    ``&lt;dl&gt;``, and ``&lt;dt&gt;`` tags. Also, ``&lt;tt&gt;`` is used for class, method names</span>
+<span class="linenos">12</span><span class="sd">    and etc, but those will *always* have the ``.descname`` or</span>
+<span class="linenos">13</span><span class="sd">    ``.descclassname`` class.</span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="sd">    Normal ``&lt;tt&gt;`` (like the &lt;tt&gt; I just wrote here) needs to be shown with</span>
+<span class="linenos">16</span><span class="sd">    the same style as anything else with ````this type of markup````.</span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="sd">    It's common for programmers to give a code example inside of their</span>
+<span class="linenos">19</span><span class="sd">    docstring::</span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="sd">        from test_py_module import Foo</span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="sd">        myclass = Foo()</span>
+<span class="linenos">24</span><span class="sd">        myclass.dothismethod('with this argument')</span>
+<span class="linenos">25</span><span class="sd">        myclass.flush()</span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="sd">        print(myclass)</span>
+<span class="linenos">28</span>
+<span class="linenos">29</span>
+<span class="linenos">30</span><span class="sd">    Here is a link to :py:meth:`capitalize`.</span>
+<span class="linenos">31</span><span class="sd">    Here is a link to :py:meth:`__init__`.</span>
+<span class="linenos">32</span>
+<span class="linenos">33</span><span class="sd">    """</span>
+<span class="linenos">34</span>
+<span class="linenos">35</span>    <span class="c1">#: Doc comment for class attribute Foo.bar.</span>
+<span class="linenos">36</span>    <span class="c1">#: It can have multiple lines.</span>
+<span class="linenos">37</span>    <span class="n">bar</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="linenos">38</span>
+<span class="linenos">39</span>    <span class="n">flox</span> <span class="o">=</span> <span class="mf">1.5</span>  <span class="c1">#: Doc comment for Foo.flox. One line only.</span>
+<span class="linenos">40</span>
 </pre></div>
-</td></tr></table></div>
 </div>
 </div>
-</div>
-<div class="section" id="references">
+</section>
+</section>
+<section id="references">
 <h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="footnotes">
+<section id="footnotes">
 <h3>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h3>
 <dl class="footnote brackets">
 <dt class="label" id="id6"><span class="brackets">1</span><span class="fn-backref">(<a href="#id1">1</a>,<a href="#id7">2</a>)</span></dt>
@@ -326,8 +284,8 @@ Here’s a reference to the next footnote: <a class="footnote-reference brackets
 nonexistent footnote: <a href="#id33"><span class="problematic" id="id14">[5]_</span></a>.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="citations">
+</section>
+<section id="citations">
 <h3>Citations<a class="headerlink" href="#citations" title="Permalink to this headline">¶</a></h3>
 <dl class="footnote brackets">
 <dt class="label" id="id15"><span class="brackets">11</span></dt>
@@ -343,20 +301,20 @@ nonexistent footnote: <a href="#id33"><span class="problematic" id="id14">[5]_</
 </dl>
 <p>Here’s a reference to the above, <a class="footnote-reference brackets" href="#id16" id="id19">12</a>, and a <span id="id20">[nonexistent]</span> citation.</p>
 <p>Here is another type of citation: <cite>citation</cite></p>
-</div>
-<div class="section" id="glossary">
+</section>
+<section id="glossary">
 <h3>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h3>
 <p>This is a glossary with definition terms for thing like <a class="reference internal" href="#term-Writing"><span class="xref std std-term">Writing</span></a>:</p>
 <dl class="glossary simple">
-<dt id="term-Documentation">Documentation</dt><dd><p>Provides users with the knowledge they need to use something.</p>
+<dt id="term-Documentation">Documentation<a class="headerlink" href="#term-Documentation" title="Permalink to this term">¶</a></dt><dd><p>Provides users with the knowledge they need to use something.</p>
 </dd>
-<dt id="term-Reading">Reading</dt><dd><p>The process of taking information into ones mind through the use of eyes.</p>
+<dt id="term-Reading">Reading<a class="headerlink" href="#term-Reading" title="Permalink to this term">¶</a></dt><dd><p>The process of taking information into ones mind through the use of eyes.</p>
 </dd>
-<dt id="term-Writing">Writing</dt><dd><p>The process of putting thoughts into a medium for other people to <a class="reference internal" href="#term-Reading"><span class="xref std std-term">read</span></a>.</p>
+<dt id="term-Writing">Writing<a class="headerlink" href="#term-Writing" title="Permalink to this term">¶</a></dt><dd><p>The process of putting thoughts into a medium for other people to <a class="reference internal" href="#term-Reading"><span class="xref std std-term">read</span></a>.</p>
 </dd>
 </dl>
-</div>
-<div class="section" id="targets">
+</section>
+<section id="targets">
 <h3>Targets<a class="headerlink" href="#targets" title="Permalink to this headline">¶</a></h3>
 <p id="example">This paragraph is pointed to by the explicit “example” target.
 A reference can be found under <a class="reference internal" href="#inline-markup">Inline Markup</a>, above. <a class="reference internal" href="#inline-hyperlink-targets">Inline
@@ -367,32 +325,33 @@ hyperlink targets</a> are also possible.</p>
 <p>Targets may be indirect and anonymous.  Thus <a class="reference internal" href="#targets">this phrase</a> may also
 refer to the <a class="reference internal" href="#targets">Targets</a> section.</p>
 <p>Here’s a <a href="#id36"><span class="problematic" id="id37">`hyperlink reference without a target`_</span></a>, which generates an error.</p>
-</div>
-</div>
-<div class="section" id="directives">
+</section>
+</section>
+<section id="directives">
 <h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="contents">
+<section id="contents">
 <h3>Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h3>
 <p>These are just a sample of the many reStructuredText Directives. For others, please see:
 <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html">http://docutils.sourceforge.net/docs/ref/rst/directives.html</a>.</p>
-</div>
-<div class="section" id="centered-text">
+</section>
+<section id="centered-text">
 <h3>Centered text<a class="headerlink" href="#centered-text" title="Permalink to this headline">¶</a></h3>
 <p>You can create a statement with centered text with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">centered::</span></code></p>
 <p class="centered">
-<strong>This is centered text!</strong></p></div>
-<div class="section" id="images-figures">
+<strong>This is centered text!</strong></p></section>
+<section id="images-figures">
 <h3>Images &amp; Figures<a class="headerlink" href="#images-figures" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="images">
+<section id="images">
 <h4>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h4>
 <p>An image directive (also clickable – a hyperlink reference):</p>
 <a class="reference internal image-reference" href="#directives"><img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/></a>
-</div>
-<div class="section" id="figures">
+</section>
+<section id="figures">
 <h4>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">¶</a></h4>
-<div class="figure align-default" id="id25">
+<figure class="align-default" id="id25">
 <img alt="reStructuredText, the markup syntax" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">A figure is an image with a caption and/or a legend:</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
+<figcaption>
+<p><span class="caption-text">A figure is an image with a caption and/or a legend:</span><a class="headerlink" href="#id25" title="Permalink to this image">¶</a></p>
 <div class="legend">
 <table class="docutils align-default">
 <colgroup>
@@ -413,15 +372,18 @@ refer to the <a class="reference internal" href="#targets">Targets</a> section.<
 </table>
 <p>This paragraph is also part of the legend.</p>
 </div>
-</div>
+</figcaption>
+</figure>
 <p>A figure directive with center alignment</p>
-<div class="figure align-center" id="id26">
+<figure class="align-center" id="id26">
 <img alt="../_images/yi_jing_01_chien.jpg" src="_images/yi_jing_01_chien.jpg"/>
-<p class="caption"><span class="caption-text">This caption should be centered.</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="admonitions">
+<figcaption>
+<p><span class="caption-text">This caption should be centered.</span><a class="headerlink" href="#id26" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="admonitions">
 <h3>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h3>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
@@ -498,10 +460,10 @@ Reader discretion is strongly advised.</p>
 <p class="admonition-title">And, by the way…</p>
 <p>You can make up your own admonition too.</p>
 </div>
-</div>
-<div class="section" id="topics-sidebars-and-rubrics">
+</section>
+<section id="topics-sidebars-and-rubrics">
 <h3>Topics, Sidebars, and Rubrics<a class="headerlink" href="#topics-sidebars-and-rubrics" title="Permalink to this headline">¶</a></h3>
-<div class="sidebar">
+<aside class="sidebar">
 <p class="sidebar-title">Sidebar Title</p>
 <p class="sidebar-subtitle">Optional Subtitle</p>
 <p>This is a sidebar.  It is for text outside the flow of the main
@@ -509,26 +471,26 @@ text.</p>
 <p class="rubric">This is a rubric inside a sidebar</p>
 <p>Sidebars often appears beside the main text with a border and
 background color.</p>
-</div>
+</aside>
 <div class="topic">
 <p class="topic-title">Topic Title</p>
 <p>This is a topic.</p>
 </div>
 <p class="rubric">This is a rubric</p>
-</div>
-<div class="section" id="target-footnotes">
+</section>
+<section id="target-footnotes">
 <h3>Target Footnotes<a class="headerlink" href="#target-footnotes" title="Permalink to this headline">¶</a></h3>
 <dl class="footnote brackets">
 <dt class="label" id="id29"><span class="brackets">5</span><span class="fn-backref">(<a href="#id30">1</a>,<a href="#id31">2</a>,<a href="#id32">3</a>)</span></dt>
 <dd><p><a class="reference external" href="http://www.python.org/">http://www.python.org/</a></p>
 </dd>
 </dl>
-</div>
-<div class="section" id="replacement-text">
+</section>
+<section id="replacement-text">
 <h3>Replacement Text<a class="headerlink" href="#replacement-text" title="Permalink to this headline">¶</a></h3>
 <p>I recommend you try <a class="reference external" href="http://www.python.org/">Python, <em>the</em> best language around</a> <a class="footnote-reference brackets" href="#id29" id="id32">5</a>.</p>
-</div>
-<div class="section" id="compound-paragraph">
+</section>
+<section id="compound-paragraph">
 <h3>Compound Paragraph<a class="headerlink" href="#compound-paragraph" title="Permalink to this headline">¶</a></h3>
 <div class="compound">
 <p class="compound-first">This paragraph contains a literal block:</p>
@@ -543,13 +505,14 @@ paragraph.</p>
 </div>
 <p>This construct is called a <em>compound paragraph</em> and can be produced
 with the “compound” directive.</p>
-</div>
-</div>
-<div class="section" id="download-links">
+</section>
+</section>
+<section id="download-links">
 <h2>Download Links<a class="headerlink" href="#download-links" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference download internal" href="_downloads/d75fba121dd698dfcc0b841d67f127cf/yi_jing_01_chien.jpg"><code class="xref download docutils literal notranslate"><span class="pre">This</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">download</span> <span class="pre">link</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">blue,</span> <span class="pre">normal</span> <span class="pre">weight</span> <span class="pre">text</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">leading</span> <span class="pre">icon,</span> <span class="pre">and</span> <span class="pre">should</span> <span class="pre">wrap</span> <span class="pre">white-spaces</span></code></a></p>
-</div>
-
+<p><a class="reference download internal" href="_downloads/64d5ed2a09e9d7815be87c81948753c9/yi_jing_01_chien.jpg"><code class="xref download docutils literal notranslate"><span class="pre">This</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">long</span> <span class="pre">download</span> <span class="pre">link</span> <span class="pre">should</span> <span class="pre">be</span> <span class="pre">blue,</span> <span class="pre">normal</span> <span class="pre">weight</span> <span class="pre">text</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">leading</span> <span class="pre">icon,</span> <span class="pre">and</span> <span class="pre">should</span> <span class="pre">wrap</span> <span class="pre">white-spaces</span></code></a></p>
+</section>
+</section>
+    <div></div>
     <div id='vueBottomPage'></div>
     </div>
   </div>
