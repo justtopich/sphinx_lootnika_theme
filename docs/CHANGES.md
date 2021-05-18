@@ -4,6 +4,14 @@ Look for new version on [https://github.com/justtopich/](https://github.com/just
 
 
 
+## 0.2.2-beta.0 (2021.05.18)
+
+### Fixes
+
+* Spinx4 CSS
+
+
+
 ## 0.2.1-beta.0 (2021.05.18)
 
 ### Fixes

@@ -371,6 +371,48 @@ code.std-token {
 	color: #b06400;
 	background-color: #ffdfbc;
 }
+/* sphinx v4 code->span */
+span {
+	font-family: "Source span Pro",monospace;
+}
+span.w {
+	margin: 0.2em;
+}
+span.k {
+	font-weight: 600;
+	font-style: italic;
+}
+span.descname {
+	color: #fe7900;
+}
+span[class*="std-"] {
+	color: #3c3c3c;
+	background-color: #f3f4f4;
+	padding: 0.2em 0.2em;
+	border-radius: 0.25em;
+}
+
+span.file {
+	color: #bd4147;
+    background-color: #f3f4f4;
+	padding: 0.2em 0.2em;
+	border-radius: 0.25em;
+}
+span.std-envvar {
+	color: #007500;
+	background-color: #afeeaf
+}
+span.std-option {
+	color: #444;
+	background-color: #d2d0ff;
+	/* color: #009bae; */
+	/* background-color: #b6dfe6;	 */
+}
+span.std-token {
+	color: #b06400;
+	background-color: #ffdfbc;
+}
+
 .guilabel {
 	padding: 0.2em 0.2em;
 	font-size: 90%;
@@ -394,7 +436,16 @@ code.std-token {
 	padding: .2rem .4rem;
 	font-size: 87.5%;
 }
-
+.sidebar {
+    float: right;
+    width: 40%;
+    display: block;
+    margin: 0 0 24px 24px;
+    padding: 24px;
+    background: #f3f6f6;
+    border: 1px solid #e1e4e5;
+	display: table-cell;
+}
 .sidebar-title {
     display: block;
     font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif;
@@ -404,6 +455,13 @@ code.std-token {
     margin: -24px -24px 24px;
     font-size: 100%;
 }
+#code-with-sidebar {
+	display: table-cell;
+}
+.container {
+	display: table-cell;
+}
+
 .nav-sidebar-inner > .list > h1, .nav-sidebar-inner > .list > h2, .nav-sidebar-inner > .list > h3 {
 	font-size: 1.75rem;
 	padding-top: 0;
