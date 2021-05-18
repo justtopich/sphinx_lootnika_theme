@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 # viewcode.collect_pages = collect_pages
 
 
-__version__ = (0, 1, 0)
+__version__ = (0, 2, 0)
 
 
 class SimpleTocTreeCollector(EnvironmentCollector):
@@ -78,6 +78,15 @@ def parse_index(app, templatename, context, doctree):
     app.env.toctree_includes - cсылки на другие rst
     По дефолту всегда содержит index с ссылками на заголовки  .. toctree::
     """
+
+    def order_nav_tree(nav_tree, name):
+        # for saving navigation header order as source
+        for toctree in headers[name]:
+            if toctree in headers:
+                nav_tree[toctree] = headers[toctree]
+                order_nav_tree(nav_tree, toctree)
+        return nav_tree
+
     if templatename == 'page.html':
         app.builder.config.nav_tree = nav_tree = {'index': app.env.toctree_includes['index']}
         app.builder.config.nav_titles = nav_titles = {'index': app.env.toctree_includes['index']}
@@ -85,10 +94,7 @@ def parse_index(app, templatename, context, doctree):
         headers = app.env.toctree_includes.copy()
 
         # index is entry point
-        for toctree in headers['index']:
-            if toctree in headers:
-                nav_tree[toctree] = headers[toctree]
-        app.builder.config.nav_tree = nav_tree
+        app.builder.config.nav_tree = order_nav_tree(nav_tree, 'index')
 
         toc_dict = app.env.toc_dict
         for page, v in app.env.titles.items():
@@ -113,7 +119,6 @@ def parse_index(app, templatename, context, doctree):
             pagename = '_modules/' + modname.replace('.', '/')
             context['nav_tree'][f"{pagename}"] = []
             context['nav_titles'][f"{pagename}"] = modname
-
     return
 
 
@@ -126,6 +131,13 @@ def body_update(body: str, includes: dict, includes_val: set, modules_url: set):
         :param link: html link
         :return: vue link
         """
+
+        def find_parent(page: str):
+            for parent, ls in includes.items():
+                if page in ls:
+                    return f"{find_parent(parent)}/{page}"
+            return page
+
         href = link.get('href')
         anchor = None
         sourced = False
@@ -152,9 +164,7 @@ def body_update(body: str, includes: dict, includes_val: set, modules_url: set):
 
                 # find full url to the page
                 if any(cur in ls for ls in [includes_val, includes]):
-                    for rst, ls in includes.items():
-                        if cur in ls:
-                            href = f"/{rst}/{cur}"
+                    href = f"/{find_parent(cur)}"
                 elif cur.startswith('../_'):
                     # links fot internal assets that will be in root directory
                     href = cur[2:]
@@ -178,6 +188,8 @@ def body_update(body: str, includes: dict, includes_val: set, modules_url: set):
         link1.contents = link.contents
         link1['class'] = link['class']
         link1['href'] = href
+        # if 'config/config_syntax' in str(link1):
+        #     print(99)
         return link1
 
     body = BeautifulSoup(body, features="lxml")
@@ -265,6 +277,7 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
                 # if current, add another level
                 children = app.env.toc_dict[name]['sections']
             # add page_toc for current page
+
             entries.append({
                 'name': name,
                 'title': title,

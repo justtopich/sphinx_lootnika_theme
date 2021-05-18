@@ -4,7 +4,22 @@ Look for new version on [https://github.com/justtopich/](https://github.com/just
 
 
 
-## 0.1.0-dev.0 (20210220)
+## 0.2.0-beta.0 (2021.05.18)
+
+### Improvements
+
+* Аdapted for Sphinx 4.0.1
+
+### Fixes
+
+* Navigation header had duplications and worked only with nested lists with max depth level = 2
+* Some internal links didn't work
+* small CSS fixes
+
+
+
+
+## 0.1.0-dev.0 (2021.02.20)
 
 ### Notes
 

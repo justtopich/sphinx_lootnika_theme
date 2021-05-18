@@ -8,15 +8,13 @@
 
 {%- macro script() %}
 {# script_files is hardcoded list in Sphinx. You can only append your js files, not delete unused #}
-<script type="text/javascript">
-function get_routes() {
- return [
-   {% for route in vue_routes %}
-    {{ route }}, {% endfor %}
- ]}
-</script>
-
-
+    <script type="text/javascript">
+    function get_routes() {
+     return [
+       {% for route in vue_routes %}
+        {{ route }}, {% endfor %}
+     ]}
+    </script>
 
     <!--<script src="{{ pathto('_static/documentation_options.js', 1) }}"></script>-->
     <script src="_static/js/vue.js"></script>
@@ -37,28 +35,54 @@ function get_routes() {
     <link rel="stylesheet" href="{{ pathto('_static/' + style, 2)|e }}" type="text/css" />
 {%- endmacro %}
 
-{%- macro tree_to_menu_sub(tree, nav_tree, nav_titles) %}
+{%- macro tree_to_menu_sub(root, tree, nav_tree, nav_titles) %}
   {# recursive building included navigation tree #}
   {# and add route to vue_routes #}
+    {%- set cur_tree =  root + '/' + tree %}
+    {%- set cur_tree_id =  'sa-' + root + '_' + tree %}
+
+  <div class="hide">{{ vue_routes.append("{ path: '" + root + '/' + tree + "', component: httpVueLoader('" + tree + ".vue') }") }}</div>
+
+  <router-link tag="li" v-scroll-to="'{{ cur_tree }}{{ cur_tree['href'] }}'" to="{{ cur_tree }}{{ cur_tree['href'] }}">
+    <a id="{{ cur_tree_id }}{{ cur_tree['href'] }}" class="nav-sidebar-link">{{ nav_titles[tree]['name'] }}</a>
+  </router-link>
+
+  {%- if nav_titles[tree]['sections']|length %}
+    <ul>
+      {% for sec in nav_titles[tree]['sections'] %}
+        <router-link tag="li" v-scroll-to="'{{ cur_tree }}{{ sec['href'] }}'" to="{{ cur_tree }}{{ sec['href'] }}">
+          <a id="{{ cur_tree_id }}{{ sec['href'] }}" class="nav-sidebar-link">{{ sec['title'] }}</a>
+        </router-link>
+      {%- endfor %}
+    </ul>
+  {%- endif %}
 
   <ul class="menu-sub">
   {% for sub_tree in nav_tree[tree] %}
-    {%- set cur_tree =  '/' + tree + '/' + sub_tree %}
-    {%- set cur_tree_id =  'sa-' + tree + '_' + sub_tree %}
+    {%- set cur_tree =  cur_tree + '/' + sub_tree %}
+    {%- set cur_tree_id =  'sa-' + cur_tree + '_' + sub_tree %}
 
-    <div class="hide">{{ vue_routes.append("{ path: '" + cur_tree + "', component: httpVueLoader('" + url_root + sub_tree + ".vue') }") }}</div>
-    <router-link tag="li" to="{{ cur_tree }}"><a id="{{ cur_tree_id }}" class="nav-sidebar-link">{{ nav_titles[sub_tree]['name'] }}</a></router-link>
+    <div class="hide">{{ vue_routes.append("{ path: '" + cur_tree + "', component: httpVueLoader('" + sub_tree + ".vue') }") }}</div>
+    <router-link tag="li" v-scroll-to="'{{ cur_tree }}'" to="{{ cur_tree }}">
+      <a id="{{ cur_tree_id }}{{ cur_tree }}" class="nav-sidebar-link">{{ nav_titles[sub_tree]['name'] }}</a>
+    </router-link>
 
-      {# {%- if nav_titles[sub_tree]['sections']|length > 1 %} #}
-      {%- if nav_titles[sub_tree]['sections']|length %}
-        <ul>
+    {%- if nav_titles[sub_tree]['sections']|length %}
+      <ul>
         {% for sec in nav_titles[sub_tree]['sections'] %}
           <router-link tag="li" v-scroll-to="'{{ cur_tree }}{{ sec['href'] }}'" to="{{ cur_tree }}{{ sec['href'] }}">
             <a id="{{ cur_tree_id }}{{ sec['href'] }}" class="nav-sidebar-link">{{ sec['title'] }}</a>
           </router-link>
         {%- endfor %}
-        </ul>
-      {%- endif %}
+      </ul>
+    {%- endif %}
+
+    {% for sub_tree2 in nav_tree[sub_tree] %}
+      <ul class="menu-sub">
+      {{- tree_to_menu_sub(cur_tree, sub_tree2, nav_tree, nav_titles) }}
+      </ul>
+    {%- endfor %}
+
   {%- endfor %}
   </ul>
 {%- endmacro %}
@@ -103,6 +127,7 @@ function get_routes() {
       <a v-scroll-to="'#vueTopPage'" id='goToTop'></a>
       <div class="header" id='vueTopPage' onmouseover="headermouselog(1)">
         <a class="brand-icon"><i class="icon-topich-chain-cicrle"></i></a>
+        <!-- <a class="brand-icon"><img src="_static/logo.svg"></i></a> -->
         <a class="header-brand">{{ docstitle }}</a>
 
 		<div class="searchBar">
@@ -135,13 +160,9 @@ function get_routes() {
             <ul class='menu-root'>
 <!--              <router-link tag="li" to="/" exact><a class="nav-sidebar-link">{{ nav_titles['index']['name'] }}</a></router-link>-->
 
-              {% for page in nav_tree %}
-                {%- if page != 'index9' %}
-                  <div class="hide">{{ vue_routes.append("{ path: '/" + page + "', component: httpVueLoader('" + page + ".vue') }") }}</div>
-                  <router-link tag="li" to="/{{ page }}"><a id="sa-{{ page }}" class="nav-sidebar-link">{{ nav_titles[page]['name'] }}</a></router-link>
-                  {{- tree_to_menu_sub(page, nav_tree, nav_titles) }}
-                {%- endif %}
-              {%- endfor %}
+              {%- if page != 'index9' %}
+                {{- tree_to_menu_sub('', 'index', nav_tree, nav_titles) }}
+              {%- endif %}
 
             </ul>
           </div>
@@ -157,7 +178,7 @@ function get_routes() {
             Created using <a href="http://www.sphinx-doc.org/">Sphinx</a>
             {{ spinx_version }} and
             <a href="https://github.com/justtopich/sphinx_lootnika_theme">Lootnika theme for Sphinx</a>
-           </div>
+          </div>
         </footer>
       </div>
     </div>

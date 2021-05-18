@@ -16,9 +16,10 @@
 
 #content-guide {
   /* padding: 2em 0; */
-  max-width: 900px;
+  max-width: 70%;
+  min-width: 30%;
   margin: 0 auto;
-  margin-left: 25em;
+  margin-left: 24em;
   display: flex;
   flex-direction: column;
   min-height: 100vh
@@ -394,15 +395,6 @@ code.std-token {
 	font-size: 87.5%;
 }
 
-.sidebar {
-    float: right;
-    width: 40%;
-    display: block;
-    margin: 0 0 24px 24px;
-    padding: 24px;
-    background: #f3f6f6;
-    border: 1px solid #e1e4e5;
-}
 .sidebar-title {
     display: block;
     font-family: Roboto Slab,ff-tisa-web-pro,Georgia,Arial,sans-serif;
@@ -416,7 +408,6 @@ code.std-token {
 	font-size: 1.75rem;
 	padding-top: 0;
 }
-
 
 /* левая менюшка */
 .nav-sidebar {
@@ -435,7 +426,7 @@ code.std-token {
 }
 .nav-sidebar .nav-sidebar-inner {
   /* width: 20em; */
-  padding: 1.6em 20px 60px 60px;
+  padding: 2.8em 1em 2em 2em
 }
 .nav-sidebar .menu-root {
   padding-left: 0;
@@ -519,11 +510,13 @@ blockquote {
 
 footer {
 	border-top: 0.1rem solid #eaecef;
-	margin-top: 1rem;
+	margin-top: 5rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	min-height: 2rem;
     overflow: auto;
+    font-size: small;
+    bottom: 0;
 }
 
 /* кнопки */
