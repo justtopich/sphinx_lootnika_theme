@@ -160,9 +160,11 @@
             <ul class='menu-root'>
 <!--              <router-link tag="li" to="/" exact><a class="nav-sidebar-link">{{ nav_titles['index']['name'] }}</a></router-link>-->
 
-              {%- if page != 'index9' %}
-                {{- tree_to_menu_sub('', 'index', nav_tree, nav_titles) }}
-              {%- endif %}
+              {% for page in nav_tree %}
+                {%- if page == 'index' or page.startswith('_modules') %}
+                  {{- tree_to_menu_sub('', page, nav_tree, nav_titles) }}
+                {%- endif %}
+              {%- endfor %}
 
             </ul>
           </div>
