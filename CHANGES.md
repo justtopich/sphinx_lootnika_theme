@@ -4,6 +4,14 @@ Look for new version on [https://github.com/justtopich/](https://github.com/just
 
 
 
+## 1.0.0-beta.0 (2021.05.19)
+
+### Improvements
+
+* Now available as package
+
+  
+
 ## 0.2.2-beta.0 (2021.05.18)
 
 ### Fixes
