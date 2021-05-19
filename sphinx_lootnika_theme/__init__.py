@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 # viewcode.collect_pages = collect_pages
 
 
-__version__ = (0, 2, 0)
+__version__ = (0, 2, 2)
 
 
 class SimpleTocTreeCollector(EnvironmentCollector):
@@ -355,5 +355,5 @@ def add_toctree_data(app, pagename, templatename, context, doctree):
 def setup(app):
     app.add_env_collector(SimpleTocTreeCollector)
     app.connect('html-page-context', add_toctree_data)
-    app.add_html_theme('press', path.abspath(path.dirname(__file__)))
+    app.add_html_theme('sphinx_lootnika_theme', path.abspath(path.dirname(__file__)))
     app.builder.config.html_additional_pages = {**{"index": "index.html"}, **app.builder.config.html_additional_pages}
