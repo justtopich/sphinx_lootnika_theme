@@ -15,7 +15,7 @@ First install the theme:
 ```shell
 py -m pip install --upgrade build
 py -m build
-pip install dist\sphinx_lootnika_theme-0.2.2b0-py2.py3-none-any.whl
+pip install dist\sphinx_lootnika_theme-0.2.3b0-py2.py3-none-any.whl
 ```
 
 To use the theme, set the theme name to `sphinx_lootnika_theme` in your sphinx project's `conf.py`:
